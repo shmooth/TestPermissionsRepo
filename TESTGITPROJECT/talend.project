@@ -211,9 +211,6 @@
     </ItemsRelations>
     <ItemsRelations xmi:id="_y7lRQKPZEee7Ir3SzwJwfw">
       <baseItem xmi:id="_y7lRQaPZEee7Ir3SzwJwfw" id="_sTjGQF-DEeSQedyNP_mxkQ" version="0.3" type="job"/>
-      <relatedItems xmi:id="_y7lRQqPZEee7Ir3SzwJwfw" id="_ulrhwOgLEeSdG7h3LTjalg" version="Latest" type="context"/>
-      <relatedItems xmi:id="_y7lRQ6PZEee7Ir3SzwJwfw" id="_Va6icOgLEeSdG7h3LTjalg" version="Latest" type="context"/>
-      <relatedItems xmi:id="_y7lRRKPZEee7Ir3SzwJwfw" id="_fWaiQOgLEeSdG7h3LTjalg" version="Latest" type="context"/>
       <relatedItems xmi:id="_y7lRRaPZEee7Ir3SzwJwfw" id="SQLike" version="Latest" type="routine"/>
       <relatedItems xmi:id="_y7lRRqPZEee7Ir3SzwJwfw" id="Numeric" version="Latest" type="routine"/>
       <relatedItems xmi:id="_y7lRR6PZEee7Ir3SzwJwfw" id="TalendString" version="Latest" type="routine"/>
