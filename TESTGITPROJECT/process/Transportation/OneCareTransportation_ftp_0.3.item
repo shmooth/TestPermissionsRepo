@@ -133,7 +133,7 @@
     <routinesParameter id="_bIni4JI0EeekKZgMG84znw" name="DataMasking"/>
     <routinesParameter id="_bHZa4JI0EeekKZgMG84znw" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="32">
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="TSTATCATCHER_STATS" value="true"/>
@@ -160,7 +160,7 @@
     <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="0RMsyjmybrE=" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+  <node componentName="tDie" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;the end is near&quot;"/>
@@ -170,7 +170,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_1"/>
   </node>
-  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="32">
+  <node componentName="tFTPGet" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPGet_1" show="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -213,12 +213,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFTPGet_1"/>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.OneCoreTrans_FilePath+&quot;\\&quot;+context.OneCoreTrans_FileName_1+&quot;.csv&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="416">
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_2" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.OneCoreTrans_FilePath+&quot;\\&quot;+context.OneCoreTrans_FileName_1+&quot;.csv&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
@@ -233,7 +233,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileCopy_2"/>
   </node>
-  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="416">
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_3" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.OneCoreTrans_FilePath+&quot;\\&quot;+context.OneCoreTrans_FileName_1+&quot;.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
@@ -248,7 +248,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileCopy_3"/>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="288">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileExist_1_FILENAME&quot;))"/>
@@ -492,7 +492,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="288">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -624,14 +624,14 @@
       <column comment="" key="false" length="10" name="TreaterZip" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" originalLength="10" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="288">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;&#xA;globalMap.put(&quot;oneCoreTabVal&quot;, &quot;&lt;tr>&lt;td>&quot;+ context.OneCoreTrans_FileName_1 +&quot;.xlsx&quot;+&quot;&lt;/td>&lt;td>&quot;+StringUtils.valueOf((((Integer)globalMap.get(&quot;tFileOutputExcel_1_NB_LINE&quot;))))+&quot;&lt;/td>&lt;/tr>&quot;);&#xA;&#xA;// &#xA;&#xA;context.OneCoreTrans_SMTP_BodyMsg= context.OneCoreTrans_SMTP_BodyMsg.replace(&quot;context.OneCoreTrans_Filedir&quot;,context.OneCoreTrans_Filedir);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="416">
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="608">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
     <elementParameter field="TEXT" name="TO" value="context.OneCoreTrans_SMTP_To"/>
     <elementParameter field="TEXT" name="FROM" value="context.CCA_INT_SMTP_FROM"/>
@@ -661,7 +661,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSendMail_1"/>
   </node>
-  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="416">
+  <node componentName="tFileCopy" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileCopy_1" show="false"/>
     <elementParameter field="FILE" name="FILENAME" value="context.OneCoreTrans_FilePath+&quot;\\&quot;+context.OneCoreTrans_FileName_1+&quot;.xlsx&quot;"/>
     <elementParameter field="CHECK" name="ENABLE_COPY_DIRECTORY" value="false"/>
@@ -676,9 +676,9 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileCopy_1"/>
   </node>
-  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tDie_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tFTPGet_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
     <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tFileExist_1">
@@ -686,9 +686,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
     <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tFTPGet_1">
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tDie_1">
     <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
     <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tFileInputDelimited_2">
