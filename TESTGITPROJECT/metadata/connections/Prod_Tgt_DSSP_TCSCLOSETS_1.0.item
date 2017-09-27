@@ -12,6 +12,7 @@
     <taggedValue xmi:id="_FHetEdaFEeWW-cC5f4jUiQ" tag="DB ProductVersion" value="Oracle Database 11g Release 11.1.0.0.0 - Production"/>
     <taggedValue xmi:id="_FHetEtaFEeWW-cC5f4jUiQ" tag="DB IdentifierQuoteString" value="&quot;"/>
     <parameters xmi:id="_BIpgANaFEeWW-cC5f4jUiQ" key="CONN_PARA_KEY_USERNAME" value="tcsclosets"/>
+    <parameters xmi:id="_OXmhgKPaEee7Ir3SzwJwfw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Schema xmi:id="_du7EwIAqEeaO7M6zZ0FP5Q" name="TCSCLOSETS" dataManager="_7OhYAEtoEeW3O690O3WQqQ">
     <ownedElement xsi:type="relational:TdTable" xmi:id="_du7r0IAqEeaO7M6zZ0FP5Q" name="OPPORTUNITY_IFACE" id="_agfZ4IAqEeaO7M6zZ0FP5Q" label="OPPORTUNITY_IFACE" tableType="TABLE">
