@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_kokZQKPGEeeaxeBXntYxoQ" confirmationNeeded="false" name="DSST">
+    <contextParameter xmi:id="_kokZQaPGEeeaxeBXntYxoQ" comment="" name="TGT_SCHEMA" prompt="TGT_SCHEMA?" promptNeeded="false" type="id_String" value="tcsclosets"/>
+    <contextParameter xmi:id="_kokZQqPGEeeaxeBXntYxoQ" comment="" name="TGT_PASSWD" prompt="TGT_PASSWD?" promptNeeded="false" type="id_Password" value="SGZAvWi3XE7HT43WSL3pVg=="/>
+    <contextParameter xmi:id="_kokZQ6PGEeeaxeBXntYxoQ" comment="" name="TGT_SERVER" prompt="TGT_SERVER?" promptNeeded="false" type="id_String" value="LABTSTDB2"/>
+    <contextParameter xmi:id="_kokZRKPGEeeaxeBXntYxoQ" comment="" name="TGT_PORT" prompt="TGT_PORT?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_kokZRaPGEeeaxeBXntYxoQ" comment="" name="TGT_SID" prompt="TGT_SID?" promptNeeded="false" type="id_String" value="DSST"/>
+    <contextParameter xmi:id="_kokZRqPGEeeaxeBXntYxoQ" comment="" name="TGT_DB" prompt="TGT_DB?" promptNeeded="false" type="id_String" value="DSST.CONTAINERSTORE.COM"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_kokZR6PGEeeaxeBXntYxoQ" confirmationNeeded="false" name="DSSP">
+    <contextParameter xmi:id="_kokZSKPGEeeaxeBXntYxoQ" comment="" name="TGT_SCHEMA" prompt="TGT_SCHEMA?" promptNeeded="false" type="id_String" value="tcsclosets"/>
+    <contextParameter xmi:id="_kokZSaPGEeeaxeBXntYxoQ" comment="" name="TGT_PASSWD" prompt="TGT_PASSWD?" promptNeeded="false" type="id_Password" value="0JBcxWps2xf1A/dAN3G1jw=="/>
+    <contextParameter xmi:id="_kokZSqPGEeeaxeBXntYxoQ" comment="" name="TGT_SERVER" prompt="TGT_SERVER?" promptNeeded="false" type="id_String" value="DFWDSSDB1"/>
+    <contextParameter xmi:id="_kokZS6PGEeeaxeBXntYxoQ" comment="" name="TGT_PORT" prompt="TGT_PORT?" promptNeeded="false" type="id_String" value="1521"/>
+    <contextParameter xmi:id="_kokZTKPGEeeaxeBXntYxoQ" comment="" name="TGT_SID" prompt="TGT_SID?" promptNeeded="false" type="id_String" value="DSSP"/>
+    <contextParameter xmi:id="_kokZTaPGEeeaxeBXntYxoQ" comment="" name="TGT_DB" prompt="TGT_DB?" promptNeeded="false" type="id_String" value="DSSP.CONTAINERSTORE.COM"/>
+  </talendfile:ContextType>
+</xmi:XMI>

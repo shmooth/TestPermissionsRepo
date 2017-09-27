@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="TO" prompt="TO?" promptNeeded="false" type="id_String" value="vdle@containerstore.com"/>
+    <contextParameter comment="" name="FROM" prompt="FROM?" promptNeeded="false" type="id_String" value="talend@containerstore.com"/>
+    <contextParameter comment="" name="SMTP_HOST" prompt="SMTP_HOST?" promptNeeded="false" type="id_String" value="mail.containerstore.com"/>
+    <contextParameter comment="" name="project" prompt="project?" promptNeeded="false" type="id_String" value="General Ledger"/>
+    <contextParameter comment="" name="job" prompt="job?" promptNeeded="false" type="id_String" value="Dev_Email_Notification"/>
+    <contextParameter comment="" name="component" prompt="component?" promptNeeded="false" type="id_String" value="tSendEmail"/>
+    <contextParameter comment="" name="errormessage" prompt="errormessage?" promptNeeded="false" type="id_String" value="This is the default error message."/>
+  </context>
+  <parameters>
+    <elementParameter field="DIRECTORY" name="COMP_DEFAULT_FILE_DIR" value="C:/Program Files/Talend/TIS_PE-All-r62258-V4.1.3/TIS_PE-All-r62258-V4.1.3/workspace"/>
+    <elementParameter field="DIRECTORY" name="PRODUCT_ROOT_DIR" value="C:/Program Files/Talend/TIS_PE-All-r62258-V4.1.3/TIS_PE-All-r62258-V4.1.3"/>
+    <elementParameter field="DIRECTORY" name="COMP_DEFAULT_PROJECT_DIR" value="C:/Program Files/Talend/TIS_PE-All-r62258-V4.1.3/TIS_PE-All-r62258-V4.1.3/workspace/Aspect"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="AUTHOR" value="Le, Viet"/>
+    <elementParameter field="TEXT" name="STATUS" value="PROD"/>
+    <elementParameter field="TEXT" name="NAME" value="Global_Email_Notification"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.1"/>
+    <elementParameter field="TEXT" name="PURPOSE" value=""/>
+    <elementParameter field="TEXT" name="DESCRIPTION" value=""/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files/TIS_PE-All-r50363-V4.1.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tOracleOutput_servername"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" value=""/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;LABTSTDB1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;dsst.containerstore.com&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;TALEND_META&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend_meta&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="EqHulQNJp6P6sP10jTXJCQ=="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;AMC_STATS&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;AMC_LOGS&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;AMC_FLOWS&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="true"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <routinesParameter id="_C8ZzACNHEeCVG4t_IfcGYA" name="DataOperation"/>
+    <routinesParameter id="_C8134CNHEeCVG4t_IfcGYA" name="Mathematical"/>
+    <routinesParameter id="_C9JZ4CNHEeCVG4t_IfcGYA" name="Numeric"/>
+    <routinesParameter id="_C9mF0CNHEeCVG4t_IfcGYA" name="Relational"/>
+    <routinesParameter id="_C5trYCNHEeCVG4t_IfcGYA" name="SQLike"/>
+    <routinesParameter id="_C95AwCNHEeCVG4t_IfcGYA" name="StringHandling"/>
+    <routinesParameter id="_C-VssCNHEeCVG4t_IfcGYA" name="TalendDataGenerator"/>
+    <routinesParameter id="_C-yYoCNHEeCVG4t_IfcGYA" name="TalendDate"/>
+    <routinesParameter id="_C_OdgCNHEeCVG4t_IfcGYA" name="TalendString"/>
+  </parameters>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="-6" offsetLabelY="-1" posX="160" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="TEXT" name="TO" value="context.TO"/>
+    <elementParameter field="TEXT" name="FROM" value="context.FROM"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;"/>
+    <elementParameter field="TEXT" name="CC" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="BCC" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;Talend Error Notification&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;Hello All,&#xD;&#xA;     An error has occurred in the &quot; + context.project + &quot; project and the &quot; + context.job + &quot; job failed.&#xD;&#xA;The error is on the &quot; + context.component + &quot; component and the error message is :&#xD;&#xA;&quot; + context.errormessage + &quot;.&#xD;&#xA;&#xD;&#xA;Regards,&#xD;&#xA;Talend Notification Team&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_HOST"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="25"/>
+    <elementParameter field="CHECK" name="SSL" value="false"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="High"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="PoLvNyVG2XWndNDdLn696A=="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="tSendMail_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="VALUE" value="&quot;ErrorMessage&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="VALUE" value="context.component + context.errormessage"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" name="key" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" name="value" nullable="true" pattern="" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node componentName="tBufferOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBufferOutput_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" name="key" nullable="true" pattern="" sourceType="" type="id_String"/>
+      <column comment="" key="false" name="value" nullable="true" pattern="" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tSendMail_1" offsetLabelX="0" offsetLabelY="0" source="tSendMail_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tBufferOutput_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="key"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>
