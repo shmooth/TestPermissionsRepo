@@ -1,0 +1,17 @@
+package routines;
+
+import org.apache.catalina.util.MD5Encoder;
+
+public class myRoutines {
+    /**
+     * encodeMD5: return the MD5 value of a String
+     * {talendTypes} String
+     * {Category} User Defined
+     * {param} string("Mark") the string to be processed
+     * {example} encodeMD5("Mark") # returns "fdsklfjsdlkfjsdlfkjs"
+     */
+    public static String encodeMD5(String pwd) {
+        org.apache.catalina.util.MD5Encoder md5 = new MD5Encoder();
+    	return md5.encode(pwd.getBytes());
+    }
+}

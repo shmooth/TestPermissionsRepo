@@ -1,0 +1,25 @@
+package routines;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class markRoutines {
+
+    /**
+     * changeDate: return a date with substract days or adding days
+     * {talendTypes} Date
+     * {Category} User Defined
+     * {param} string("world") input: The string need to be printed.
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static Date changeDate(Date dateToChange, int numberDay) {
+    	Calendar c = Calendar.getInstance();
+        c.setTime(dateToChange);
+        c.add(Calendar.DAY_OF_YEAR, numberDay);
+        dateToChange.setTime( c.getTime().getTime() );
+        c.setTime( dateToChange ) ;
+    	System.out.println(dateToChange.toString());
+    	return dateToChange;
+    	
+    }
+}

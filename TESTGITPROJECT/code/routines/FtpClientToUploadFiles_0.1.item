@@ -1,0 +1,67 @@
+package routines;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.commons.net.ftp.FTP;
+import org.apache.commons.net.ftp.FTPReply;
+import org.apache.commons.net.ftp.FTPSClient;
+
+public class FtpClientToUploadFiles {
+
+	public static void FtpConnectionupload(String server, String port, String username, String password, String protocol, String mode, String execPORT, String isImplicit, String remoteFile, String localFile, String suffix) {
+
+		int portInt = Integer.parseInt(port);
+		int timeoutInMillis = 10000;
+		boolean isImplicitB = Boolean.parseBoolean(isImplicit);
+		System.out.println("Mode : " + mode);
+		System.out.println("File Path : " + localFile);
+		try {
+			localFile = localFile.replaceAll("//", "\\\\\\\\");
+			localFile = localFile.replaceAll("/", "\\\\");
+			System.out.println("New File Path : " + localFile);
+			FTPSClient client = new FTPSClient(protocol, isImplicitB);
+			client.setDataTimeout(timeoutInMillis);
+			System.out.println("################ Connecting to Server ################################");
+			int reply;
+			System.out.println("################ Connect Call ################################");
+			client.connect(server, portInt);
+			client.setFileType(FTP.NON_PRINT_TEXT_FORMAT);
+			client.setFileTransferMode(FTP.BINARY_FILE_TYPE);
+			client.login(username, password);
+			if(mode.equals("A"))
+				client.enterLocalActiveMode();
+			else
+				client.enterLocalPassiveMode();
+			System.out.println("################ Login Success ################################");
+			client.execPBSZ(0); 
+			client.execPROT(execPORT);
+			System.out.println("Connected to " + server + ".");
+			String filename = "";
+			File file = new File(localFile);
+			if (file.isDirectory()) {
+				File[] files = file.listFiles();
+				for (int i = 0; i < files.length; i++) {
+					filename = files[i].getName();
+					if (filename.endsWith(suffix)) {
+						BufferedInputStream bis = new BufferedInputStream(new FileInputStream(localFile + filename));
+						client.storeFile(remoteFile+filename, bis);
+					}
+				}
+			}
+			reply = client.getReplyCode();
+			System.out.println("Ftp Server Reply : " + reply);
+			if (!FTPReply.isPositiveCompletion(reply)) {
+				client.disconnect();
+				System.err.println("FTP server refused connection.");
+				System.exit(1);
+			}
+			client.logout();
+		} catch (Exception e) {
+			System.err.println("Could not connect to server.");
+	 	    e.printStackTrace();
+			return;
+		}
+	}
+}

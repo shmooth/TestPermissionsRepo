@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_YanEAaSJEeeOuuqYiCRRoA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_YanEAqSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_Database" prompt="MS_IRXSubscriber_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanEA6SJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_AdditionalParams" prompt="MS_IRXSubscriber_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanEBKSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_Password" prompt="MS_IRXSubscriber_Password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_YanEBaSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_Server" prompt="MS_IRXSubscriber_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanEBqSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_Login" prompt="MS_IRXSubscriber_Login?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanEB6SJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_Port" prompt="MS_IRXSubscriber_Port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanECKSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_Schema" prompt="MS_IRXSubscriber_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanECaSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_DatabaseName" prompt="MS_IRXSubscriber_DatabaseName?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanECqSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_irxCaid" prompt="MS_IRXSubscriber_irxCaid?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanEC6SJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_irxICO" prompt="MS_IRXSubscriber_irxICO?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanEDKSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_irxCare" prompt="MS_IRXSubscriber_irxCare?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YanEDaSJEeeOuuqYiCRRoA" comment="" name="MS_IRXSubscriber_irxCareCSV" prompt="MS_IRXSubscriber_irxCareCSV?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

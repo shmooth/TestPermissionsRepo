@@ -1,0 +1,103 @@
+package routines;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class HarvardRoutines {
+
+public static HashMap <String, Set> specialtiesMap= new HashMap<String, Set>();
+
+ public static String[] specialtyArray = new String []{"INTERNAL MEDICINE", "FAMILY MEDICINE", "FAMILY PRACTICE", "GENERAL PRACTICE", "FAMILY MEDICINE / FAMILY PRACTICE"};
+
+ public static Set<String> specialtySetStatic = new HashSet<String>(Arrays.asList(specialtyArray));
+ 
+    public static String storeSpecialties(String NPI, String specialty) 
+    {
+    	Set<String> specialtySet;
+    	specialty = specialty.toUpperCase();
+        if(specialtiesMap.containsKey(NPI))
+        {
+	          specialtySet = specialtiesMap.get(NPI);
+              specialtySet.add(specialty);
+              specialtiesMap.put(NPI, specialtySet);
+        }
+            
+        else
+        {
+        	specialtySet = new HashSet<String>();
+        	specialtySet.add(specialty);
+        	specialtiesMap.put(NPI, specialtySet);
+        }
+         //    System.out.println(specialtiesMap);
+        return "";
+    } 
+    
+    public static String Category_desc_derived (String NPI_Key, String deg) 
+    {
+    	Set<String> specialtySetCategory = new HashSet<String>();
+    	Set<String>  primarySetCategory = new HashSet<String>();
+    	primarySetCategory.addAll(specialtiesMap.get(NPI_Key));
+    	
+    	String categoryDesc = "";
+    	
+    	if(!deg.equalsIgnoreCase("MD") || !deg.equalsIgnoreCase("DO"))
+    	{
+      // System.out.println(deg);
+    		categoryDesc = "AHP";
+    	}
+    	if(deg.equalsIgnoreCase("MD") || deg.equalsIgnoreCase("DO"))
+    	{
+    			specialtySetCategory = specialtiesMap.get(NPI_Key);
+    	
+    	//		System.out.println("1"+deg+specialtySetCategory+":"+primarySetCategory);
+    			specialtySetCategory.retainAll(specialtySetStatic);
+    			
+    	//System.out.println(NPI_Key+":"+deg+specialtySetCategory+":"+primarySetCategory);
+    			
+    			if(specialtySetCategory.size() == 0)
+    			{
+    				categoryDesc = "Specialist";
+    			//	System.out.println(specialtySetCategory+ categoryDesc+primarySetCategory);
+    			}
+    		
+    			else if(specialtySetCategory.size() == primarySetCategory.size())
+    			{
+    				categoryDesc = "PCP";
+    			//	System.out.println(specialtySetCategory+ categoryDesc+primarySetCategory);
+    			}
+    			
+    			else 
+    				{
+    				categoryDesc = "PCP/Spec";   
+    			//	System.out.println(specialtySetCategory+ categoryDesc+primarySetCategory);
+    				}
+    	}
+     	
+    //	System.out.println(categoryDesc);
+        return categoryDesc;
+    } 
+}

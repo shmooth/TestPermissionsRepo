@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_Yar8gKSJEeeOuuqYiCRRoA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_Yar8gaSJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_Database" prompt="MS_IRX_Logging_Database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Yar8gqSJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_AdditionalParams" prompt="MS_IRX_Logging_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Yar8g6SJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_Password" prompt="MS_IRX_Logging_Password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_Yar8hKSJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_Server" prompt="MS_IRX_Logging_Server?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Yar8haSJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_Login" prompt="MS_IRX_Logging_Login?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Yar8hqSJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_Port" prompt="MS_IRX_Logging_Port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Yar8h6SJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_Schema" prompt="MS_IRX_Logging_Schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Yar8iKSJEeeOuuqYiCRRoA" comment="" name="MS_IRX_Logging_Tablename" prompt="MS_IRX_Logging_Tablename?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

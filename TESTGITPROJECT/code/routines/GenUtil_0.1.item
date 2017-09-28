@@ -1,0 +1,355 @@
+package routines;
+
+//import com.sun.tools.jxc.apt.Const;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+
+public class GenUtil
+{
+	// Index variable for Error Message String Array Declaration
+	public static int c=0;
+	// Error Message String Array Declaration
+	public static String em[]=new String[1100];
+	/**
+     * convertUpperCase: it will convert tall the values into uppercase
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message,type") input: The string need to be printed.
+     * 
+     * {example} convertUpperCase("hello world") # HELLO WORLD !.
+     */
+	public static String convertUpperCase(String message,String type) 
+    {
+		// Incrementing Error Message String Array index value for each record
+		//c=Numeric.sequence(type,1,1); 
+		try {
+    		//Checking for null value and length of the value
+             if(message != null && StringHandling.LEN(StringHandling.TRIM(message))>0)
+            	 
+             {
+            	// converting the Message into Upper case
+             	 message=message.trim().toUpperCase();
+             	//Returning Cleansed value
+             	 return message;
+             }
+            	              
+            else 
+             {
+            	 //Generating Exception for null values
+            	 throw new Exception("convert Uppercase failed in " +type);
+            	
+             }
+    	}
+    	   	    	
+    	catch(Exception e)
+    	{
+    		//Printing Null value Exceptions
+    		System.out.println(c);
+    	    //Storing the error message into string array by appending to the existing for each record
+    		em[c]+=""+e;
+    	}
+    	//Returning Cleansed value
+        return message;
+
+    }
+  
+    /**
+     * wildCardValidation: it will remove the special characters if exists any in the data
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("message,type") input: The string need to be printed.
+     * 
+     * {example} wildCardValidation("hello@world") # hello world !.
+     */
+
+	public static String wildCardValidation(String s,String t)
+    {
+		
+	    c=Numeric.sequence(t,1,1);
+	    //Assigning empty to the Error Message to replace default value 'null'
+    	em[c]+="";
+    	try
+    	{
+    		
+    			//Checks for null value and length of the value
+    			if(s!=null && StringHandling.LEN(StringHandling.TRIM(s))>0)
+    			{
+    			    // Call to Uppercase(-,-) function and storing result into String variable
+    	              s=convertUpperCase(s, t);
+    				// Checks for special characters existence
+    	
+    				if(StringHandling.COUNT(s,",")>0||StringHandling.COUNT(s,"*")>0||
+    				   StringHandling.COUNT(s,"(")>0||StringHandling.COUNT(s,"@")>0||
+    				   StringHandling.COUNT(s,"!")>0||StringHandling.COUNT(s,"#")>0||
+    				   StringHandling.COUNT(s,"%")>0||StringHandling.COUNT(s,"$")>0||
+    				   StringHandling.COUNT(s,"+")>0||StringHandling.COUNT(s,"?")>0||
+    				   StringHandling.COUNT(s,"&")>0||StringHandling.COUNT(s,"[")>0|| 
+    				   StringHandling.COUNT(s,"]")>0||StringHandling.COUNT(s,"\"")>0||
+    				   StringHandling.COUNT(s,"{")>0||StringHandling.COUNT(s,"}")>0||
+    				   StringHandling.COUNT(s,")")>0||StringHandling.COUNT(s,"|")>0||
+    				   StringHandling.COUNT(s,"<")>0||StringHandling.COUNT(s,">")>0)
+    				{
+    					//removing Special Characters from the value
+    					s=s.replace(",","").replace("*","").replace("(","").replace("@","").replace("!", "").replace("#", "").replace("%", "").replace("$","").replace("+","").replace("?","").replace("&","").replace("[", "").replace("]", "").replace("{", "").replace("}", "").replace(")", "").replace("|", "").replace("<", "").replace(">", "").replace("\"", "");
+    					 		
+    				}
+    			}
+    			else
+    			{
+    				//Generating exception for null values
+    				throw new Exception ("wildcard validation failed in " +t);
+    			}
+    	}
+    	catch(Exception e)
+    	{
+    	    //Storing the error message into string array by appending to the existing for each record
+    		em[c]+=" , "+e;
+    		//Printing the exception for null values
+    		System.out.println(e);
+    	}
+    	//Returning Cleansed value
+    	return s;
+         
+    	
+    }
+    /**
+     * spellNames: it will validates the data and spelled out by using their abrevations.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("name") input: The string need to be printed.
+     * 
+     * {example} spellNames("CORPORATION") # CORP !.
+     */
+
+	public static String spellNames(String Name, String Type) 
+    {
+	    //Assigning empty to the Error Message to replace default value 'null'
+    	em[c]+="";
+    	try
+    	{
+    		//Checks for Null value and length of the value
+    		if(Name!=null && StringHandling.LEN(StringHandling.TRIM(Name))>0)
+    		{
+    				//Checks for Full spell Existence
+    			
+    			if (StringHandling.COUNT(Name, Constants.MFC)>0)
+    			{
+    			    // Replacing Full Spell with the corresponding Abbreviation
+    				Name = StringHandling.CHANGE(Name,Constants.MFC,"MFC");
+                      
+    			}
+    			else if (StringHandling.COUNT(Name, Constants.LLP)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.LLP,"LLP"); 
+          
+    			}
+    			else if (StringHandling.COUNT(Name, Constants.TECH)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.TECH,"TECH"); 
+          
+    			}
+    			else if (StringHandling.COUNT(Name, Constants.CO)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.CO,"CO"); 
+           
+    			}
+    			else if (StringHandling.COUNT(Name, Constants.INC)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.INC,"INC"); 
+    			}
+    			else if (StringHandling.COUNT(Name, Constants.CORP)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.CORP,"CORP"); 
+    			}
+    			else if (StringHandling.COUNT(Name,Constants.LTD)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.LTD,"LTD"); 
+    			}
+    			else if (StringHandling.COUNT(Name,Constants.MFG)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.MFG,"MFG"); 
+    			}
+    			else if (StringHandling.COUNT(Name,Constants.DIV)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.DIV,"DIV"); 
+    			}
+    			else if (StringHandling.COUNT(Name, Constants.DIST)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.DIST,"DIST"); 
+    			}
+    			else if (StringHandling.COUNT(Name,Constants.GOVT)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.GOVT,"GOVT"); 
+    			}
+    			else if (StringHandling.COUNT(Name, Constants.UNIV)>0)
+    			{
+    				Name = StringHandling.CHANGE(Name,Constants.UNIV,"UNIV"); 
+    			}
+    		    // call to symbolValid(-,-) function by passing Cleansed Name from the spellNames(-,-)
+                return symbolValid(Name,Type); 
+    		}
+    		else
+    		{
+    			//Generating Exception for Null Values
+    			throw new Exception("Convertion of fullspell into Abbrevation failed in "+ Type);
+    		}
+    	}
+    	catch(Exception e)
+    	{
+    	    //Storing the error message into string array by appending to the existing for each record
+    		em[c]+=" , "+e;
+    		//Printing Exception for Null Values
+    		System.out.println(e);
+    	}
+    	
+    	return Name;
+    }
+    /**
+     * symbolValid: it will validates the data and abbreviated by their valid symbols..
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("name") input: The string need to be printed.
+     * 
+     * {example} symbolValid("SAM AND SONS") # SAM & SONS !.
+     */
+    public static String symbolValid(String Name,String Type) 
+    {
+        //Assigning empty to the Error Message to replace default value 'null'
+    	em[c]+="";
+    	try
+    	{
+    		
+    		//Checks for Null value and length of the value
+    	
+    		if(Name!=null && StringHandling.LEN(StringHandling.TRIM(Name))>0)
+    		{
+    			//Checks for " AND " Existence
+    			if (StringHandling.COUNT(Name, " AND ")>0)
+    			{
+    				
+    			//Replacing word " AND " with symbol "&"
+    				Name = Name.replace(" AND "," & "); 
+    			}
+    			//Checks for " - " Existence
+    			if (StringHandling.COUNT(Name, " - ")>0)
+    			{
+    				//Removing spaces before and after "-" symbol
+    				Name = StringHandling.CHANGE(Name," - ","-"); 
+    			}
+    			//Checks for "SAINT" Existence
+    			if(StringHandling.COUNT(Name,Constants.ST)>0)
+    			{
+    				if (Name.substring(0,5).equals(Constants.ST))
+    				{
+    					//Replacing word "SAINT" with "ST"
+    					Name = Name.replace(Constants.ST, "ST"); //$NON-NLS-1$
+    				}
+    			}
+    			//Checks for "MOUNT" Existence
+		   	    if(StringHandling.COUNT(Name,Constants.MT)>0)
+		   	    {
+		   	    	if (Name.substring(0,5).equals(Constants.MT))
+		   	    	{
+		   	    	//Replacing word "MOUNT" with "MT"
+		   	    		Name = Name.replace(Constants.MT, "MT"); //$NON-NLS-1$
+		   	    	}
+		   	    }
+    		}
+    		else
+    		{
+    			//Generating Exception for Null Values
+    			throw new Exception("Symbol validation failed in "+ Type);
+    		}
+    	}
+    	catch(Exception e)
+    	{
+    	    //Storing the error message into string array by appending to the existing for each record
+    		em[c]+=" , "+e;
+    		//Printing Exception for Null Values
+    		System.out.println(e);
+		   
+    	}
+    	 //Returning Cleansed Values	
+	    return Name;
+    	   	
+    }
+    /**
+     * ValidateLocation: it will validates the data by removing the country or state names if  exists after the "," in the data.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("LOCATION") input: The string need to be printed.
+     * 
+     * {example} ValidateLocation("LAS ANGELS,US") # LAS ANGELS !.
+     */
+    public static String ValidateLocation(String message,String Type) 
+    {
+    	
+    	try
+    	{
+    		//Checks for Null value and length of the value
+    	
+    		if(message!=null && StringHandling.LEN(StringHandling.TRIM(message))>0)
+    		{
+    			//Checks for "," Existence
+    	
+    			if( message.indexOf(',')>0)
+    			{
+    				//Taking only Location into message
+    				message=message.substring(0, message.indexOf(","));
+    		  
+    			}
+    			
+    		}
+    		else
+    		{
+    			//Generating Exception for Null Values
+    			throw new Exception(Type+" Contains Null Values");
+    		}
+    	}
+    	catch(Exception e)
+    	{
+    		em[c]+=","+e;
+    		//Printing Exception for Null Values
+    		System.out.println(e);
+    	}
+    	//Returning Location
+       	return message;
+    }
+}

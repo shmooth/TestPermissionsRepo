@@ -1,0 +1,526 @@
+package routines;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class CactusRoutines {
+
+public static HashMap <String, Set> specialtiesMap= new HashMap<String, Set>();
+
+ public static String[] specialtyArray = new String []{"INTERNAL MEDICINE", "FAMILY MEDICINE", "FAMILY PRACTICE", "GENERAL PRACTICE", "FAMILY MEDICINE / FAMILY PRACTICE"};
+
+ public static Set<String> specialtySetStatic = new HashSet<String>(Arrays.asList(specialtyArray));
+ 
+ public static HashMap<String, String> cactusMasterMap = new HashMap<String,String>();
+ 
+ public static HashMap<String, Set> referenceMasterMap = new HashMap<String,Set>();
+ 
+ public static HashMap<String, String> keyForProgramID = new HashMap<String,String>();
+ 
+ public static HashMap<String, ArrayList> referenceDataMap = new HashMap<String,ArrayList>();
+ 
+ public static void  cactusMasterMap (String loop, String field, String fieldValue)
+ {
+	 field = removeNull(field).toUpperCase();
+	 loop = removeNull(loop).toUpperCase();
+	 fieldValue = removeNull(fieldValue).toUpperCase();
+	 
+	 if(!fieldValue.isEmpty())
+	 cactusMasterMap.put(field+"&&##&&"+loop, fieldValue);
+	 
+	/* if(field.equalsIgnoreCase("STATUS_RTK")&& loop.equalsIgnoreCase("PROVIDERS"))
+	 	System.out.println(cactusMasterMap.get(field+"&&##&&"+loop));*/
+ }
+
+ public static void  collectKeysforProgramID (String key, String value)
+ {
+	// System.out.println(key+":"+value);
+	 
+	 key = removeNull(key);
+	 value = removeNull(value);
+	 
+	 if(!key.isEmpty())
+		 keyForProgramID.put(key, value);
+	 
+
+	//
+	// System.out.println(keyForProgramID);
+ }
+
+ 
+ public static void  referenceMasterMap (String refTable_K, String referenceMaster_K, String description,  String shortDescription)
+ {
+	 Set masterDataSet;
+	 ArrayList descriptionList = new ArrayList();
+	 
+	 refTable_K = removeNull(refTable_K).toUpperCase();
+	 referenceMaster_K = removeNull(referenceMaster_K).toUpperCase();
+	 description = removeNull(description);
+	 shortDescription = removeNull(shortDescription);
+	 
+	// System.out.println(refTable_K+"-"+referenceMaster_K+"-"+description+"-"+shortDescription);
+	 
+	 if(referenceMasterMap.containsKey(referenceMaster_K))
+		 masterDataSet = referenceMasterMap.get(referenceMaster_K);
+	 else
+		 masterDataSet = new HashSet();
+		 
+	 masterDataSet.add(refTable_K);	 
+	 referenceMasterMap.put(referenceMaster_K,masterDataSet);
+	 
+	 descriptionList.add(description);
+	 descriptionList.add(shortDescription);
+	 referenceDataMap.put(refTable_K, descriptionList);
+	 
+	// System.out.println(referenceMasterMap);
+	// System.out.println(referenceDataMap);
+ }
+ 
+ public static String retrieveReferenceDescription (int flag, String field, String loop, String refTable_K)
+ {
+	// System.out.println(field+" - "+loop+" - "+refTable_K);
+	 ArrayList descriptionList = new ArrayList();
+	 Set referenceDataSet = new HashSet();
+	 
+	 descriptionList.add(" ");
+	 descriptionList.add(" ");
+	 
+	 String description = "";
+	 String referenceMaster = "No data match found";
+	 field = removeNull(field).toUpperCase();
+	 loop = removeNull(loop).toUpperCase();
+	 refTable_K = removeNull(refTable_K).toUpperCase();
+	 
+	
+	 
+	 if(cactusMasterMap.containsKey(field+"&&##&&"+loop))
+		 {
+		 referenceMaster = cactusMasterMap.get(field+"&&##&&"+loop);
+	// System.out.println(referenceMaster);
+	 
+			 if(referenceMasterMap.containsKey(referenceMaster))
+				 referenceDataSet = referenceMasterMap.get(referenceMaster);
+		 
+				 if(referenceDataSet.contains(refTable_K))
+					 descriptionList = referenceDataMap.get(refTable_K);
+ 		}
+
+	 	if(flag == 0)
+	 description = descriptionList.get(flag).toString();
+	 	else
+	 description = descriptionList.get(flag).toString();
+	 
+	 /* if(field.equalsIgnoreCase("PRACTICETYPE_RTK") && refTable_K.equalsIgnoreCase("C3UF0JBT1U"))
+		 {
+		// System.out.println(field+" - "+loop+" - "+refTable_K);
+		// System.out.println(cactusMasterMap);
+		// System.out.println(descriptionList);
+		 }*/
+	 		 	
+	 return description;
+ }
+ 
+    public static String storeSpecialties(String NPI, String specialty) 
+    {
+    	Set<String> specialtySet;
+    	specialty = specialty.toUpperCase();
+        if(specialtiesMap.containsKey(NPI))
+        {
+	          specialtySet = specialtiesMap.get(NPI);
+              specialtySet.add(specialty);
+              specialtiesMap.put(NPI, specialtySet);
+        }
+            
+        else
+        {
+        	specialtySet = new HashSet<String>();
+        	specialtySet.add(specialty);
+        	specialtiesMap.put(NPI, specialtySet);
+        }
+         //    System.out.println(specialtiesMap);
+        return "";
+    } 
+    
+    public static String Category_desc_derived (String NPI_Key, String deg) 
+    {
+    	Set<String> specialtySetCategory = new HashSet<String>();
+    	Set<String>  primarySetCategory = new HashSet<String>();
+    	primarySetCategory.addAll(specialtiesMap.get(NPI_Key));
+    	
+    	String categoryDesc = "";
+    	
+    	if(!deg.equalsIgnoreCase("MD") || !deg.equalsIgnoreCase("DO"))
+    	{
+      // System.out.println(deg);
+    		categoryDesc = "AHP";
+    	}
+    	if(deg.equalsIgnoreCase("MD") || deg.equalsIgnoreCase("DO"))
+    	{
+    			specialtySetCategory = specialtiesMap.get(NPI_Key);
+    	
+    	//		System.out.println("1"+deg+specialtySetCategory+":"+primarySetCategory);
+    			specialtySetCategory.retainAll(specialtySetStatic);
+    			
+    	//System.out.println(NPI_Key+":"+deg+specialtySetCategory+":"+primarySetCategory);
+    			
+    			if(specialtySetCategory.size() == 0)
+    			{
+    				categoryDesc = "Specialist";
+    			//	System.out.println(specialtySetCategory+ categoryDesc+primarySetCategory);
+    			}
+    		
+    			else if(specialtySetCategory.size() == primarySetCategory.size())
+    			{
+    				categoryDesc = "PCP";
+    			//	System.out.println(specialtySetCategory+ categoryDesc+primarySetCategory);
+    			}
+    			
+    			else 
+    				{
+    				categoryDesc = "PCP/Spec";   
+    			//	System.out.println(specialtySetCategory+ categoryDesc+primarySetCategory);
+    				}
+    	}
+     	
+    //	System.out.println(categoryDesc);
+        return categoryDesc;
+    } 
+    
+  //  public static List extractProgramID (String assignmentRTK, String activeFlag, String userDefL1, String categoryRTK, String specialtyRTK, String individualInstitutionFlag) 
+   // {
+    public static List extractProgramID(String activeFlag,
+    		String Providers_IndividualInstitutionFlag , String Entityassignments_Recordtype,
+    		String EntityAssignments_Assignment_RTK,String Entityassignmentid_Type_RTK,
+    		String ProviderSpecialty_Specialty_RTK,String Providers_Category_RTK, String UserdefRTK2) 
+        {
+    	String ProgramID = "";
+    	
+    	activeFlag = removeNull(activeFlag);
+    	Providers_IndividualInstitutionFlag = removeNull(Providers_IndividualInstitutionFlag);
+    	Entityassignments_Recordtype = removeNull(Entityassignments_Recordtype);
+    	EntityAssignments_Assignment_RTK = removeNull(EntityAssignments_Assignment_RTK);
+    	Entityassignmentid_Type_RTK = removeNull(Entityassignmentid_Type_RTK);
+    	ProviderSpecialty_Specialty_RTK = removeNull(ProviderSpecialty_Specialty_RTK);
+    	Providers_Category_RTK = removeNull(Providers_Category_RTK);
+    	UserdefRTK2 = removeNull(UserdefRTK2);
+    
+   // 	System.out.println("1=>"+EntityAssignments_Assignment_RTK+":"+Entityassignmentid_Type_RTK+":"+UserdefRTK2);
+    	
+  //  	System.out.println("2=>"+keyForProgramID.get("SCO")+":"+keyForProgramID.get("Provider Role")+":"+keyForProgramID.get("PCP"));
+    	
+    	List dataList = new ArrayList();
+    	
+    	String programID = "";
+    	String providerType = "";
+    	
+  //	if((assignmentRTK.equalsIgnoreCase("SCO") ||  assignmentRTK.equalsIgnoreCase("SCO/CCC")) && categoryRTK.equalsIgnoreCase("PCP"))
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase("1")&& (Entityassignments_Recordtype.equalsIgnoreCase("A") || Entityassignments_Recordtype.equalsIgnoreCase("E"))&& 
+    			EntityAssignments_Assignment_RTK.equalsIgnoreCase(keyForProgramID.get("SCO"))&&
+    			Entityassignmentid_Type_RTK.equalsIgnoreCase(keyForProgramID.get("Provider Role")) && UserdefRTK2.equalsIgnoreCase(keyForProgramID.get("PCP")))
+    	{
+    		// for Provider Type = SCO PCP
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P01";
+    			
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "PX1";
+    		
+    		providerType = "SCO PCP";
+    		
+    	//	System.out.println(ProgramID);
+    	}
+    		
+    	//if(assignmentRTK.equalsIgnoreCase("ICO") && categoryRTK.equalsIgnoreCase("PCP"))
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "1") && (Entityassignments_Recordtype.equalsIgnoreCase("A") || Entityassignments_Recordtype.equalsIgnoreCase("E")) &&
+    			EntityAssignments_Assignment_RTK.equalsIgnoreCase( keyForProgramID.get("ICO"))&&
+    			Entityassignmentid_Type_RTK.equalsIgnoreCase(keyForProgramID.get( "Provider Role")) && UserdefRTK2.equalsIgnoreCase(keyForProgramID.get("PCP")))	
+    	{
+    		// for Provider Type = ICO PCP
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P0A";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "PXA";    		
+
+    		providerType = "ICO PCP";
+    		
+    	//	System.out.println("2");
+    	}
+    	
+    	//if(assignmentRTK.equalsIgnoreCase("SCO") && userDefL1.equalsIgnoreCase("1"))	
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "1") && 
+    			(Entityassignments_Recordtype.equalsIgnoreCase("A") || Entityassignments_Recordtype.equalsIgnoreCase("E"))&&
+    			EntityAssignments_Assignment_RTK.equalsIgnoreCase( keyForProgramID.get("SCO")) && 
+    			Entityassignmentid_Type_RTK.equalsIgnoreCase( keyForProgramID.get("Provider Role")) && UserdefRTK2.equalsIgnoreCase(keyForProgramID.get("Care Manager")))	
+    	{
+    		//for Provider Type = SCO CARE MANAGERS
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P05";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "PX5";   
+
+    		providerType = "SCO CARE MANAGERS";
+    		
+    	//	System.out.println("3");
+    	}
+    		
+    	//if(assignmentRTK.equalsIgnoreCase("ICO") && userDefL1.equalsIgnoreCase("1"))	
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "1") && (Entityassignments_Recordtype.equalsIgnoreCase("A") || Entityassignments_Recordtype.equalsIgnoreCase("E"))
+    			&&EntityAssignments_Assignment_RTK.equalsIgnoreCase( keyForProgramID.get("ICO"))&&
+    			Entityassignmentid_Type_RTK.equalsIgnoreCase( keyForProgramID.get("Provider Role")) && UserdefRTK2.equalsIgnoreCase(keyForProgramID.get("Care Manager")))	
+    	{
+    		//for Provider Type = ICO CLINICAL CARE MANAGERS
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P0B";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "PXB";    		
+
+    		providerType = "ICO CLINICAL CARE MANAGERS";
+    		
+    	//	System.out.println("4");
+    	}
+    	
+    	
+    	//if(assignmentRTK.equalsIgnoreCase("ICO") && specialtyRTK.equalsIgnoreCase("SCM"))	
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "1") && (Entityassignments_Recordtype.equalsIgnoreCase("A") || Entityassignments_Recordtype.equalsIgnoreCase("E"))&&
+    			EntityAssignments_Assignment_RTK.equalsIgnoreCase( keyForProgramID.get("ICO"))&&
+    			Entityassignmentid_Type_RTK.equalsIgnoreCase( keyForProgramID.get("Provider Role")) && 
+    			(UserdefRTK2.equalsIgnoreCase(keyForProgramID.get("SCM"))|| UserdefRTK2.equalsIgnoreCase(keyForProgramID.get("SuppCare"))))	
+    	
+    	{
+    		//for Provider Type = ICO SUPPORTIVE CARE MANAGERS
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P0C";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "PXC";    		
+
+    		providerType = "ICO SUPPORTIVE CARE MANAGERS";
+    		
+    	//	System.out.println("SuppCare");
+    	}
+    	
+    	//if(assignmentRTK.equalsIgnoreCase("SCO") && specialtyRTK.equalsIgnoreCase("PCS") && individualInstitutionFlag.equalsIgnoreCase("2"))
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&EntityAssignments_Assignment_RTK.equalsIgnoreCase( keyForProgramID.get("SCO"))&&
+    			ProviderSpecialty_Specialty_RTK.equalsIgnoreCase( keyForProgramID.get("Primary Care Site")) )	
+    	
+    	{
+    		//for Provider Type = SCO PCL
+    		
+    	//	System.out.println("Inside SCO PCL");
+    		
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P20";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "P2X";    		
+
+    		providerType = "SCO PCL";
+    		
+    	//	System.out.println("6");
+    	}
+    	
+    	//if(assignmentRTK.equalsIgnoreCase("ICO") && specialtyRTK.equalsIgnoreCase("PCS"))	
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&EntityAssignments_Assignment_RTK.equalsIgnoreCase( keyForProgramID.get("ICO"))&&
+    			ProviderSpecialty_Specialty_RTK.equalsIgnoreCase( keyForProgramID.get("Primary Care Site")))	
+    	
+    	{
+    		//for Provider Type = ICO PCL
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P0D";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "PXD";    		
+
+    		providerType = "ICO PCL";
+    		
+    	//	System.out.println("7");
+    	}
+    	
+    	//if(categoryRTK.equalsIgnoreCase("Contracting Entity"))
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&Providers_Category_RTK.equalsIgnoreCase( keyForProgramID.get("Contracting Entity")))
+    	{
+    		//for Provider Type = CONTRACTING ENTITIES
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P60";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "P6X";    		
+
+    		providerType = "CONTRACTING ENTITIES";
+    		
+    	//	System.out.println("8");
+    	}
+     	
+     	//if(specialtyRTK.equalsIgnoreCase("CMO"))
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&
+    			ProviderSpecialty_Specialty_RTK.equalsIgnoreCase( keyForProgramID.get("CMO")))
+    	{
+    		//for Provider Type = CARE MANAGEMENT ORGANIZATIONS
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P40";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "P4X";    		
+
+    		providerType = "CARE MANAGEMENT ORGANIZATIONS";
+    		
+    	//	System.out.println("9");
+    	}
+    	
+     	//if(assignmentRTK.equalsIgnoreCase("ICO") && specialtyRTK.equalsIgnoreCase("PCH"))	
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&EntityAssignments_Assignment_RTK.equalsIgnoreCase(keyForProgramID.get("ICO"))&&
+    			ProviderSpecialty_Specialty_RTK.equalsIgnoreCase( keyForProgramID.get("PCH")))	
+    	
+    	{
+    		//for Provider Type = ICO PRIMARY CARE HEALTH HOME
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P0E";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "PXE";  
+
+    		providerType = "ICO PRIMARY CARE HEALTH HOME";
+    		
+    	//	System.out.println("10");
+    	}
+     	
+    	//if(assignmentRTK.equalsIgnoreCase("ICO") && specialtyRTK.equalsIgnoreCase("BHH"))	
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&EntityAssignments_Assignment_RTK.equalsIgnoreCase(keyForProgramID.get("ICO"))&&
+    			ProviderSpecialty_Specialty_RTK.equalsIgnoreCase( keyForProgramID.get("Behavioral Health Home")))	
+    	
+    	{
+    		//for Provider Type = ICO BEHAVIORAL HEALTH HOME
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," +"P0F";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," +"PXF";    		
+
+    		providerType = "ICO BEHAVIORAL HEALTH HOME";
+    		
+    	//	System.out.println("11");
+    	}
+     	
+    	//if(assignmentRTK.equalsIgnoreCase("SCO") && specialtyRTK.equalsIgnoreCase("ASAP")
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&EntityAssignments_Assignment_RTK.equalsIgnoreCase(keyForProgramID.get("SCO"))&&
+    			ProviderSpecialty_Specialty_RTK.equalsIgnoreCase( keyForProgramID.get("ASAP")))	
+    	
+    	{
+    		//for Provider Type = SCO ASAP
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," +"P08";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," +"PX8";    		
+
+    		providerType = "SCO ASAP";
+    		
+    	//	System.out.println("12");
+    	}
+    	  	
+    	//if(specialtyRTK.equalsIgnoreCase("SCL"))	
+    	if(Providers_IndividualInstitutionFlag.equalsIgnoreCase( "2")&&ProviderSpecialty_Specialty_RTK.equalsIgnoreCase(keyForProgramID.get("SCS")))	
+    	
+    	{
+    		//for Provider Type = SCO SECONDARY CARE LOCATION
+    		if(activeFlag.equalsIgnoreCase("1"))
+    			programID = programID + "," + "P30";
+    		
+    		if(activeFlag.equalsIgnoreCase("0"))
+    			programID = programID + "," + "P3X";  		
+
+    		providerType = "SCO SECONDARY CARE LOCATION";
+    		
+    		//System.out.println("13");
+    	}
+    	
+		    	dataList.add(programID.replaceFirst(",", "").trim());
+		    	dataList.add(providerType);
+		    	
+		    //	System.out.println(dataList);
+		    	
+    		return dataList;    	
+    		
+    		
+    }
+    
+    public static List<String> extractNameCityState (String primaryHospital) 
+    {
+    	    	
+    	//System.out.println(primaryHospital);
+    	List<String> dataList = new ArrayList<String>();
+    	
+    	primaryHospital = removeNull(primaryHospital).replaceFirst(" - ", "##&&##");
+    	
+    	if (!primaryHospital.contains(" - "))
+    	{
+    		primaryHospital = primaryHospital.replaceFirst("##&&##", " - ");
+    	}
+    	
+    	if(primaryHospital.contains(" - "))
+    	{
+    		String tempArray [] = primaryHospital.split(" - ");
+    		
+    		dataList.add(removeNull(tempArray[0]).replaceFirst("##&&##", " - "));
+    		//System.out.println(dataList);
+    		if (primaryHospital.contains(","))
+    		{
+    			
+    			String newTempArray []= tempArray[1].toString().split(",");
+    			
+    			dataList.add(removeNull(newTempArray[0]));
+    			
+    			if(newTempArray.length == 2)
+    			dataList.add(removeNull(newTempArray[1]));
+    		}
+    		else
+    			dataList.add(removeNull(tempArray[1]));
+    	}
+    	
+    	else
+    		
+    		dataList.add(primaryHospital);
+    	//System.out.println(dataList);
+    	return dataList;
+    	
+    }
+    
+    public static String removeNull (String data) 
+    {
+    	
+    	if(data == null)
+    		return "";
+
+    	else
+    		return data.trim();
+    	
+    }
+    
+}

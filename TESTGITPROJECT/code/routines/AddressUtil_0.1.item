@@ -1,0 +1,1089 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be be
+ * fore the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class AddressUtil {
+
+    /**
+     * countryIsoCode: it will convert the Countries into their valid ISO codes
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Country") input: The string need to be printed.
+     * 
+     * {example} countryIsoCode("UNITED STATES") # US !.
+     */
+	public static String countryIsoCode(String Country, String Type) 
+	{
+		//Assigning empty to the Error Message to replace default value 'null'
+		GenUtil.em[GenUtil.c]+="";
+		try
+		{
+			// Checking for Null values and length of values
+			if (Country!=null && StringHandling.LEN(StringHandling.TRIM(Country))>0)
+			{
+				// Checking for Country full spell Existence
+				if (Country.equalsIgnoreCase(Constants.AR)) 
+				{
+					//Making Country value into valid ISO code
+					Country= "AR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.AU)) 
+				{
+					Country= "AU"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.AT)) 
+				{
+					Country= "AT"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.BH)) 
+				{
+					Country= "BH"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.BY)) 
+				{
+					Country= "BY"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.BE)) 
+				{
+					Country= "BE"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.BR)) 
+				{
+					Country= "BR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.BG)) 
+				{
+					Country= "BG"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.CA)) 
+				{
+					Country= "CA"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.CN)) 
+				{
+					Country= "CN"; 
+				}
+        
+				else if (Country.equalsIgnoreCase(Constants.HR)) 
+				{
+					Country= "HR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.CZ)) 
+				{
+					Country= "CZ"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.DK)) 
+				{
+					Country= "DK"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.DO)) 
+				{
+					Country= "DO"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.EG)) 
+				{
+					Country= "EG"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.FI)) 
+				{
+					Country= "FI"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.FR)) 
+				{
+					Country= "FR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.GE)) 
+				{
+					Country= "GE"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.GR)) 
+				{
+					Country= "GR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.HK)) 
+				{
+					Country= "HK"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.HU)) 
+				{
+					Country= "HU"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.IN)) 
+				{
+					Country= "IN"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.IE)) 
+				{
+					Country= "IE"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.IL)) 
+				{
+					Country= "IL"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.IT)) 
+				{
+					Country= "IT"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.JP)) 
+				{
+					Country= "JP"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.KZ)) 
+				{
+					Country= "KZ"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.KR)) 
+				{
+					Country= "KR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.LV)) 
+				{
+					Country= "LV"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.LB)) 
+				{
+					Country= "LB"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.LT)) 
+				{
+					Country= "LT"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.LU)) 
+				{
+					Country= "LU"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.MY)) 
+				{
+					Country= "MY"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.MX)) 
+				{
+					Country= "MX"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.NL)) 
+				{
+					Country= "NL"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.NZ)) 
+				{
+					Country= "NZ"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.NO)) 
+				{
+					Country= "NO"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.PH)) 
+				{
+					Country= "PH";
+				}
+				else if (Country.equalsIgnoreCase(Constants.PL)) 
+				{
+					Country= "PL"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.PR)) 
+				{
+					Country= "PR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.RO)) 
+				{
+					Country= "RO"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.RU)) 
+				{
+					Country= "RU"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.SG)) 
+				{
+					Country= "SG"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.SI)) 
+				{
+					Country= "SI"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.ZA)) 
+				{
+					Country= "ZA"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.ES)) 
+				{
+					Country= "ES"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.LK)) 
+				{
+					Country= "LK"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.SE)) 
+				{
+					Country= "SE"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.CH)) 
+				{
+					Country= "CH"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.TW)) 
+				{
+					Country= "TW"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.TH)) 
+				{
+					Country= "TH"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.TN)) 
+				{
+					Country= "TN"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.TR)) 
+				{
+					Country= "TR"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.UA)) 
+				{
+					Country= "UA"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.UK)) 
+				{
+					Country= "UK"; 
+				}
+				else if (Country.equalsIgnoreCase("USA")|| Country.equalsIgnoreCase(Constants.US)) 
+				{
+					Country= "US"; 
+				}
+				else if (Country.equalsIgnoreCase(Constants.VN)) 
+				{
+					Country= "VN"; 
+				}
+			}
+			else
+			{
+				//Generating Exception for Null values
+				throw new Exception("Countrycode Standardization failed in "+ Type);
+			}
+		}
+		catch(Exception e)
+		{
+			//Storing the error message into string array by appending to the existing for each record
+			GenUtil.em[GenUtil.c]+=" , "+e;
+			//Printing Exception Message for Null values
+			System.out.println(e);
+		}
+		//Returning Standard Country ISO code
+        return Country;
+    }
+	/**
+     * stateCodeISO: it will convert the States into their valid ISO codes
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("State") input: The string need to be printed.
+     * 
+     * {example} stateCodeISO("CAMBRIDGESHIRE") # CB !.
+     */
+	public static String stateCodeISO(String State,String Type)
+    {
+		GenUtil.em[GenUtil.c]+="";
+		try
+		{
+			// Checking for Null values
+			if (State!=null && StringHandling.LEN(StringHandling.TRIM(State))>0)
+			{
+				// Checking for State full spell Existence
+				if (State.equalsIgnoreCase(Constants.BDF)) 
+				{
+					//Making State value into valid ISO code 
+					State= "BDF"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.CAM)) 
+				{
+					State= "CAM"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.CEN)) 
+				{
+					State= "CEN"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.DOR)) 
+				{
+					State= "DOR"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.GNT)) 
+				{
+					State= "GNT"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.PA)) 
+				{
+					State= "PA"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.SC)) 
+				{
+					State= "SC"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.SFK)) 
+				{
+					State= "SFK"; 
+				}
+				else if (State.equalsIgnoreCase(Constants.WIL)) 
+				{
+					State= "WIL"; 
+				}
+			}
+			else
+			{
+				//Generating Exception for Null Values
+				throw new Exception("state standardization failed in "+ Type);
+			}
+		}
+		catch(Exception e)
+		{
+			//Storing the error message into string array by appending to the existing for each record
+			 GenUtil.em[GenUtil.c]+=" , "+e;
+			//Printing Exception for Null values
+			System.out.println(e);
+		}
+		//Returning Standard State ISO code
+       return State;
+    }
+	
+	
+	/**
+     * telephone: it will converts telephone number into valid and unique. 
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("Telephone") input: The string need to be printed.
+     * 
+     * {example} telephone("1234567890") # 123-456-7890 !.
+     */
+
+  public static String telephone(String Telephone, String Type)
+  {
+	//Assigning empty to the Error Message to replace default value 'null'
+	 GenUtil.em[GenUtil.c]+="";
+	 try
+	 {
+		 //Checks for Null values and length of the value
+		 if (Telephone!=null && StringHandling.LEN(StringHandling.TRIM(Telephone))>0)
+		 {
+			 try
+			 {
+				 //Checks for valid number of digits in Telephone Number
+				 if(Telephone.replace("-","").length()==10)
+				 {
+					 //Checks for the valid Pattern
+					 if(!Telephone.matches("[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"))
+					 {	
+						 //Making Telephone Number into standard format
+						 Telephone=Telephone.replace("-","").substring(0,3)+"-"+Telephone.replace("-","").substring(3,6)+"-"+Telephone.replace("-","").substring(6,10);
+					 }
+				 }
+				 else
+				 {
+					 //Generating Exception for Invalid Phone Number
+					 throw new Exception (Type+" Should Contains 10 digits: "+Telephone);
+				 }
+			 } 
+			 catch(Exception e)
+			 {
+				//Storing the error message into string array by appending to the existing for each record
+				 GenUtil.em[GenUtil.c]+=" , "+e;
+				 //Printing Exception  message for Invalid Phone Numbers
+				 System.out.println(e);
+			 }
+		 }
+		 else
+		 {
+			 //Generating Exceptions for Null Values
+			 throw new Exception("Telephone standardization failed in " +Type);
+		 }
+	}
+    catch(Exception e)
+	{
+    	//Storing the error message into string array by appending to the existing for each record
+    	GenUtil.em[GenUtil.c]+=" , "+e;
+    	//Printing Exception message  for Null Values
+    	System.out.println(e);
+	}
+    	//Returning Standard Telephone Number
+	   	return Telephone;	
+ }
+	
+	 /**
+	     * tax: it converts tax number  into valid and unique. 
+	     * 
+	     * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {param} string("Tax") input: The string need to be printed.
+	     * 
+	     * {example} tax("123456789") # 123-45-6789 !.
+	     */
+	 public static String tax(String Tax, String Type)
+	 {
+		//Assigning empty to the Error Message to replace default value 'null'
+		 GenUtil.em[GenUtil.c]+="";
+		 try
+		 {
+			 //Checks for Null values and length of the value
+			 if (Tax!=null && StringHandling.LEN(StringHandling.TRIM(Tax))>0)
+			 {
+				 try
+				 {
+					 //Checks for valid number of digits in Tax Number
+					 if(Tax.replace("-","").length()==9)
+					 {
+						 //Checks for the Invalid Pattern
+						 if(!Tax.matches("[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]"))
+						 {
+							 // Making Tax value into Standard Format
+							 Tax=StringHandling.CHANGE(StringHandling.CHANGE(Tax.replace("-",""),"[A-Z]","")," ","").substring(0,3)+"-"+StringHandling.CHANGE(StringHandling.CHANGE(Tax.replace("-",""),"[A-Z]","")," ","").substring(3,5)+"-"+StringHandling.CHANGE(StringHandling.CHANGE(Tax.replace("-",""),"[A-Z]","")," ","").substring(5,9);
+						 } 
+					 }				
+					 else
+					 {
+						 //Generating Exception for Invalid Tax Number
+						 throw new Exception (Type+" Should Contain 9 digits: "+Tax);
+					 }
+				 } 
+				 catch(Exception e)
+				 {
+					//Storing the error message into string array by appending to the existing for each record
+					 GenUtil.em[GenUtil.c]+=" , "+e;
+					 //Printing Exception  message for Invalid Tax Numbers
+					 System.out.println(e);
+				 }
+			 }
+			 else
+			 {
+				 //Generating Exceptions for Null Values
+				 throw new Exception("Tax standardization failed in " + Type);
+			 }
+		 }
+		 catch(Exception e)
+		 {
+			//Storing the error message into string array by appending to the existing for each record
+			 GenUtil.em[GenUtil.c]+=" , "+e;
+			 //Printing Exceptions message for Null Values
+			 System.out.println(e);
+		 }
+    		//Returning Standard Tax Number
+	    	return Tax;
+	 }
+	 
+	 /**
+	     * cityFormat: it will validates the CITY names into their full forms  into valid and unique. 
+	     * 
+	     * 
+	     * {talendTypes} String
+	     * 
+	     * {Category} User Defined
+	     * 
+	     * {param} string("City") input: The string need to be printed.
+	     * 
+	     * {example} cityFormat("SJ") # SAN JOSE!.
+	     */
+	public static String cityFormat(String City,String Type) 
+    {
+		//Assigning empty to the Error Message to replace default value 'null'
+		GenUtil.em[GenUtil.c]+="";
+		try
+		{
+			// Checks for Null value and length of the Value
+			if (City!=null && StringHandling.LEN(StringHandling.TRIM(City))>0)
+			{
+				//Checks for City abbreviation Existence
+				if (City.equals("SJ")) 
+				{
+					//Replacing City abbreviation with full spell 
+					City= Constants.SJ;
+				}
+				else if (City.equals("NY")) 
+				{
+					City=Constants.NY; 
+				} 	
+        
+				else if (City.equals("CB")) 
+				{
+					City= Constants.CB; 
+				} 
+			}
+			else
+			{				
+				//Generating Exception for Null values
+				throw new Exception("City standardization failed in " + Type);
+			}
+		}
+		catch(Exception e)
+		{
+			//Storing the error message into string array by appending to the existing for each record
+			GenUtil.em[GenUtil.c]+=" , "+e;
+			//Printing Exception message for Null values
+			System.out.println(e);
+		}
+		//Returning Standard City
+		return City;
+    }
+	/**
+     * postalCodeFormat: it will validates the postal code and converts into valid format based on the each country format.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} (String postalCode,String Country) input: The string need to be printed.
+     * 
+     * {example} postalCodeFormat("123456789") # 12345-6789 !.
+     */
+public static String postalCodeFormat(String message,String Country,String Type) 
+{
+	//Assigning empty to the Error Message to replace default value 'null'
+	GenUtil.em[GenUtil.c]+="";
+	try
+	{
+		// Checking for Null values and length of the values
+		if ((message!=null && Country != null )&& (StringHandling.LEN(StringHandling.TRIM(message))>0 && StringHandling.LEN(StringHandling.TRIM(Country))>0))
+		{
+			
+		    // Checking for Country
+			if(Country.equals("US"))
+			{
+				//Removing all the characters except Digits to find out the length of the values
+				String m1=StringHandling.CHANGE(message,"[A-Z]*[a-z]*","").replace("-","").replace(" ","");
+				try
+				{
+					//Checking valid number of Digits in Postal code value
+					if(m1.length()==9)
+					{
+						//Checking for Invalid Postal code formats
+						if(!message.matches("[0-9][0-9][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"))//message:
+						{
+							//Making Postal code value into standard formats
+							message=m1.substring(0,5)+"-"+m1.substring(5,9);	
+    					}
+					}
+					else if(m1.length()==5)
+    					
+					{
+						message=m1;
+					}
+					else
+					{
+						//Generating Exception for the Invalid Postal code Formats
+						throw new Exception(Type+" Should be in the format of 99999-9999 or 99999 for "+ Country);
+					}
+    					
+    			}
+			    catch(Exception e)
+			    {
+			    	//Storing the error message into string array by appending to the existing for each record
+			    	GenUtil.em[GenUtil.c]+=" , "+e;
+			    	//Printing Exception message for the Invalid Postal code formats
+			    	System.out.println(e);
+			    }
+				
+			}    	    			
+    			
+    	else if(Country.equals("CA") ) 
+    	{
+    		try
+    		{
+    			//Checking for Valid number of Alpha Numerics in Postal code value
+    			if(message.replace("-","").replace(" ","").length()==6)
+    			{
+    				//Checking for the Invalid Postal code format 
+    				if(!message.matches("[A-Z][0-9][A-Z] [0-9][A-Z][0-9]"))
+    				{
+    					//Making Postal code value into Standard format
+    					message=message.replace("-","").replace(" ","").substring(0,3)+" "+message.replace("-","").replace(" ","").substring(3,6);
+    				}
+    			
+    			}
+    			//Checking Again for the Invalid Postal code format for the confirmation
+    			if(!message.matches("[A-Z][0-9][A-Z] [0-9][A-Z][0-9]"))
+    			{
+    				//Generating Exception for the Invalid Postal code format
+    				throw new Exception (Type+" Should be in the format of 'A1A 1A1' for "+Country);
+    			}
+    		}
+    		catch(Exception e)
+    		{
+    			//Storing the error message into string array by appending to the existing for each record
+    			GenUtil.em[GenUtil.c]+=" , "+e;
+    			//Printing Exception message for the Invalid Postal Code formats.
+    			System.out.println(e);
+    		}
+    	}
+    	else if(Country.equals("FR")|| Country.equals("IT")||Country.equals("DE") )
+    	{
+    		String m=StringHandling.CHANGE(message,"[A-Z]*[a-z]*","").replace("-","").replace(" ","");
+    		try
+    		{
+    			if(m.length()==5)
+    			{
+    				if(!message.matches("[0-9][0-9][0-9][0-9][0-9]"))
+    				{
+    					message=m;
+    				}
+    			}
+    			else
+    			{
+    				throw new Exception (Type+" Should be in the format of 99999 for "+ Country);
+    			}
+    		}
+    		catch(Exception e)
+    		{
+    			//Storing the error message into string array by appending to the existing for each record
+    			GenUtil.em[GenUtil.c]+=" , "+e;
+    			System.out.println(e);
+    		}
+    		
+    	}
+    			
+    	  	
+    	else if(Country.equals("SG") || Country.equals("CN") )
+    	{
+
+    		String m=StringHandling.CHANGE(message,"[A-Z]*[a-z]*","").replace("-","").replace(" ","");
+    		try
+    		{
+    			if(m.length()==6)
+    			{
+    				if(!message.matches("[0-9][0-9][0-9][0-9][0-9][0-9]"))
+    				{
+    					message=m;
+    				}
+    			}
+    			else
+    			{
+    				throw new Exception (Type+" Should be in the format of 999999 for "+ Country);
+    			}
+    		}
+    		catch(Exception e)
+    		{
+    			//Storing the error message into string array by appending to the existing for each record
+    			GenUtil.em[GenUtil.c]+=" , "+e;
+    			System.out.println(e);
+    		}
+    			
+    	}
+    	   	
+    	else if(Country.equals("GB") )
+    	{
+    		try
+    		{    			
+    			if(message.replace("-","").replace(" ","").length()==6)
+    			{
+    				if(!message.matches("[A-Z][A-Z][0-9] [0-9][A-Z][A-Z]"))
+    	    		{
+    						
+    					message=message.replace("-","").replace(" ","").substring(0,3)+" "+message.replace("-","").replace(" ","").substring(3,6);
+    				
+    	    		}
+    			}
+    			if(!message.matches("[A-Z][A-Z][0-9] [0-9][A-Z][A-Z]"))
+        		{
+        				
+        			throw new Exception (Type+" Should be in the format of 'AA1 1AA' for "+Country);
+        		}
+    		}
+    		catch(Exception e)
+    		{
+    			//Storing the error message into string array by appending to the existing for each record
+    			GenUtil.em[GenUtil.c]+=" , "+e;
+    			System.out.println(e);
+    		}
+    	}
+    			
+    	
+    	else if(Country.equals("SE"))
+    	{
+    		String m=StringHandling.CHANGE(message,"[A-Z]*[a-z]*","").replace("-","").replace(" ","");
+    	
+    		try
+    		{
+    			if(m.length()==5)
+    			{
+    		
+    				if( !message.matches("[0-9][0-9][0-9] [0-9][0-9]"))
+    				{
+    					
+    					message=m.substring(0,3)+" "+m.substring(3,5);
+			
+    				}
+    			}
+    			else
+    			{
+    				throw new Exception (Type+" Should be in the format of '999 99' for "+Country);
+    			}
+    		}
+    		catch(Exception e)
+    		{
+    			//Storing the error message into string array by appending to the existing for each record
+    			GenUtil.em[GenUtil.c]+=" , "+e;
+    			System.out.println(e);
+    		}
+    	}
+    	else if(Country.equals("KR") && !message.matches("[0-9][0-9][0-9]-[0-9][0-9][0-9]"))
+    	{
+    		String m=StringHandling.CHANGE(message,"[A-Z]*[a-z]*","").replace("-","").replace(" ","");
+        	
+    		try
+    		{
+    			if(m.length()==6)
+    			{
+    		
+    				if( !message.matches("[0-9][0-9][0-9]-[0-9][0-9][0-9]"))
+    				{
+    					
+    					message=m.substring(0,3)+"-"+m.substring(3,6);
+			
+    				}
+    			}
+    			else
+    			{
+    				throw new Exception (Type+" Should be in the format of '999999' for "+Country);
+    			}
+    		}
+    		catch(Exception e)
+    		{
+    			//Storing the error message into string array by appending to the existing for each record
+    			GenUtil.em[GenUtil.c]+=" , "+e;
+    			System.out.println(e);
+    		}	
+    		
+        					
+    	}
+    	
+    	else if(Country.equals("IN") && !message.matches("[0-9][0-9][0-9] [0-9][0-9][0-9]"))
+    	{
+    		String m=StringHandling.CHANGE(message,"[A-Z]*[a-z]*","").replace("-","").replace(" ","");
+        	
+    		try
+    		{
+    			if(m.length()==6)
+    			{
+    		
+    				if( !message.matches("[0-9][0-9][0-9] [0-9][0-9][0-9]"))
+    				{
+    					
+    					message=m.substring(0,3)+" "+m.substring(3,6);
+			
+    				}
+    			}
+    			else
+    			{
+    				throw new Exception (Type+" Should be in the format of '999 999' for "+Country);
+    			}
+    		}
+    		catch(Exception e)
+    		{
+    			//Storing the error message into string array by appending to the existing for each record
+    			GenUtil.em[GenUtil.c]+=" , "+e;
+    			System.out.println(e);
+    		}	
+    			
+    		
+        					
+    	 }
+		}
+		else
+		{
+			if(message==null || message=="")
+			{
+				//Generating Exception for null values existing in Postal code
+			throw new Exception ("Postalcode standardization failed in " + Type);
+			}
+			else
+			{
+			//Generating Exception for null values existing in Country
+			throw new Exception(" Postalcode standardization failed because of country in " + Type);
+			}
+		}
+	}
+	catch(Exception e)
+	{
+		//Storing the error message into string array by appending to the existing for each record
+		GenUtil.em[GenUtil.c]+=" , "+e;		
+		//Printing Exception message for null values exists in Postal code
+		System.out.println(e);
+	}
+    	  			
+    	return message;  
+
+        
+    }
+/**
+ * streetValidation: it will validates the street address and validates it into unique format.
+ * 
+ * 
+ * {talendTypes} String
+ * 
+ * {Category} User Defined
+ * 
+ * {param} (String street) input: The string need to be printed.
+ * 
+ * {example} streetValidation("20 S ST") # 20 S STREET !.
+ */
+
+public static String streetValidation(String message, String type)
+{
+	 //Assigning empty to the Error Message to replace default value 'null'
+	 GenUtil.em[GenUtil.c]+="";
+	try
+	{
+		// Checking for Null values and length of the values
+		if (message!=null && StringHandling.LEN(StringHandling.TRIM(message))>0)
+		{
+			// call to wildCardValidation(-,-). It internally calls convertUppercase(-,-) and storing end result into message
+			message=GenUtil.wildCardValidation(message, type);
+			
+			// checks for "ST" existence at the end of the String
+	  		if(StringHandling.RIGHT(message,2).equals("ST"))
+			{
+	  			// Replacing "ST" with the "STREET"
+				message= message.substring(0,StringHandling.LEN(message)-2) + " STREET";   
+			}
+			else if(StringHandling.RIGHT(message,2).equals("RD"))
+			{
+					message= message.substring(0,StringHandling.LEN(message)-2) + " ROAD";   
+			}
+			else if(StringHandling.RIGHT(message,3).equals("AVE"))
+			{
+				message= message.substring(0,StringHandling.LEN(message)-3) + " AVENUE";   
+			}
+			else if(StringHandling.RIGHT(message,2).equals("DR"))
+			{
+				message= message.substring(0,StringHandling.LEN(message)-2) + " DRIVE";   
+			}
+			else if(StringHandling.RIGHT(message,4).equals("BLVD"))
+			{
+				message= message.substring(0,StringHandling.LEN(message)-4) + " BOULEVARD";   
+			}
+			else if(StringHandling.RIGHT(message,4).equals("PKWY"))
+			{
+				message= message.substring(0,StringHandling.LEN(message)-4) + " PARKWAY";   
+			}
+				
+		}
+		else
+		{
+			//System.out.println("null values");
+			throw new Exception ("Street validation failed in " + type);
+		}
+	 }
+	catch(Exception e)
+	{
+		//Storing the error message into string array by appending to the existing for each record
+		GenUtil.em[GenUtil.c]+=" , "+e;		
+		//Printing Exception message for null values exists in street validation
+		System.out.println(e);
+	}
+	// Returns the Standard Address Value		
+	return message;
+}
+
+/**
+ * streetValidation_fs: it will validates the street address and validates it into unique format.
+ * 
+ * 
+ * {talendTypes} String
+ * 
+ * {Category} User Defined
+ * 
+ * {param} (String street) input: The string need to be printed.
+ * 
+ * {example} streetValidation("20 S ST") # 20 S STREET !.
+ */
+public static String streetValidation_fs(String message, String type)
+{
+	//Assigning empty to the Error Message to replace default value 'null'
+	 GenUtil.em[GenUtil.c]+="";
+	try
+	{
+		// checks for null value and length of the Value
+		if(message!=null && message.trim().length()>0)
+		{
+			// call to wildCardValidation(-,-). It internally calls convertUppercase(-,-) and storing end result into message
+			message=GenUtil.wildCardValidation(message, type);
+			
+			// Checks for the first word of the message contains Alphabets or not
+			if(StringHandling.INDEX(message," ")>0 && message.substring(0,StringHandling.INDEX(message," ")).matches("[^0-9]"))
+			{
+				// checks the first word of the message is Single Character or not
+				if(StringHandling.INDEX(message," ")==1)
+				{
+					// Checks the existence of "ST" at the end of the message
+					if(message.substring(StringHandling.LEN(message)-2, StringHandling.LEN(message)).equals("ST"))
+					{
+						// Replacing "ST" with the "STREET"
+						message=message.substring(0,message.length()-2)+"STREET";	
+					}
+				
+					else if(message.substring(StringHandling.LEN(message)-3, StringHandling.LEN(message)).equals("AVE"))
+					{
+						message=message.substring(0,message.length()-3)+"AVENUE";	
+					}
+					else if(message.substring(StringHandling.LEN(message)-2, StringHandling.LEN(message)).equals("DR"))
+					{
+						message=message.substring(0,message.length()-2)+"DRIVE";
+					}
+					else if(message.substring(StringHandling.LEN(message)-4, StringHandling.LEN(message)).equals("BLVD"))
+					{
+						message=message.substring(0,message.length()-4)+"BOULEVARD";	
+					}
+					else if(message.substring(StringHandling.LEN(message)-3, StringHandling.LEN(message)).equals(" RD"))
+					{
+						message=message.substring(0,message.length()-2)+"ROAD";	
+					}
+					else if(message.substring(StringHandling.LEN(message)-4, StringHandling.LEN(message)).equals("PKWY"))
+					{
+						message=message.substring(0,message.length()-4)+"PARKWAY";
+					}
+				}
+				// Enters if the first word of message contains multiple characters
+				else 
+				{
+					// Checks the existence of "STREET" at the end of the message
+					if(message.substring(StringHandling.LEN(message)-6, StringHandling.LEN(message)).equals("STREET"))
+				    {
+						// Replacing "STREET" with the "ST"
+						message=message.substring(0,message.length()-6)+"ST";
+				    }
+			    
+					else if(message.substring(StringHandling.LEN(message)-6, StringHandling.LEN(message)).equals("AVENUE"))
+					{
+						message=message.substring(0,message.length()-6)+"AVE";	
+					}
+					else if(message.substring(StringHandling.LEN(message)-5, StringHandling.LEN(message)).equals("DRIVE"))
+					{
+						message=message.substring(0,message.length()-5)+"DR";
+					}
+					else if(message.substring(StringHandling.LEN(message)-7, StringHandling.LEN(message)).equals("PARKWAY"))
+					{
+						message=message.substring(0,message.length()-7)+"PKWY";
+					}
+					else if(message.substring(StringHandling.LEN(message)-9, StringHandling.LEN(message)).equals("BOULEVARD"))
+					{
+						message=message.substring(0,message.length()-9)+"BLVD";
+
+					}
+					else if(message.substring(StringHandling.LEN(message)-4, StringHandling.LEN(message)).equals("ROAD"))
+					{
+						message=message.substring(0,message.length()-4)+"RD";
+					}
+				}
+										
+			}
+			// Enters if the first word of the message contains Digits
+			else
+			{	
+				// Checks the second word of the message contains single character or not
+				if(StringHandling.INDEX(StringHandling.RIGHT(message,StringHandling.LEN(message)-StringHandling.INDEX(message," ")-1)," ")==1)
+				{
+					// Checks the existence of "ST" at the end of the message
+					if(message.substring(StringHandling.LEN(message)-2, StringHandling.LEN(message)).equals("ST"))
+					{
+						// Replacing "ST" with the "STREET"
+						message=message.substring(0,message.length()-2)+"STREET";	
+					}
+				
+					else if(message.substring(StringHandling.LEN(message)-3, StringHandling.LEN(message)).equals("AVE"))
+					{
+						message=message.substring(0,message.length()-3)+"AVENUE";	
+					}
+					else if(message.substring(StringHandling.LEN(message)-2, StringHandling.LEN(message)).equals("DR"))
+					{
+						message=message.substring(0,message.length()-2)+"DRIVE";	
+					}
+					else if(message.substring(StringHandling.LEN(message)-4, StringHandling.LEN(message)).equals("BLVD"))
+					{
+						message=message.substring(0,message.length()-4)+"BOULEVARD";
+					}
+					else if(message.substring(StringHandling.LEN(message)-3, StringHandling.LEN(message)).equals(" RD"))
+					{
+						message=message.substring(0,message.length()-2)+"ROAD";
+					}
+					else if(message.substring(StringHandling.LEN(message)-4, StringHandling.LEN(message)).equals("PKWY"))
+					{
+						message=message.substring(0,message.length()-4)+"PARKWAY";	
+					}
+				}
+				// Enters if second word of message contains multiple characters
+				else
+				{
+					// Checks the existence of "STREET" at the end of the message
+					if(message.substring(StringHandling.LEN(message)-6, StringHandling.LEN(message)).equals("STREET"))
+					{
+						// Replacing "STREET" with "ST"
+						message=message.substring(0,message.length()-6)+"ST";
+					}
+				
+					else if(message.substring(StringHandling.LEN(message)-6, StringHandling.LEN(message)).equals("AVENUE"))
+					{
+						message=message.substring(0,message.length()-6)+"AVE";	
+					}
+					else if(message.substring(StringHandling.LEN(message)-5, StringHandling.LEN(message)).equals("DRIVE"))
+					{	
+						message=message.substring(0,message.length()-5)+"DR";
+					}
+					else if(message.substring(StringHandling.LEN(message)-7, StringHandling.LEN(message)).equals("PARKWAY"))
+					{
+						message=message.substring(0,message.length()-7)+"PKWY";
+					}
+					else if(message.substring(StringHandling.LEN(message)-9, StringHandling.LEN(message)).equals("BOULEVARD"))
+					{
+						message=message.substring(0,message.length()-9)+"BLVD";
+					}
+					else if(message.substring(StringHandling.LEN(message)-4, StringHandling.LEN(message)).equals("ROAD"))
+					{
+						message=message.substring(0,message.length()-4)+"RD";
+					}
+				}				
+				
+			}
+	  }
+	  else
+	  {
+		// Generating Exception for Null Values
+		throw new Exception("Street validation failed in " + type);
+	  }
+	}
+  	catch(Exception e)
+  	{
+  		//Storing the error message into string array by appending to the existing for each record
+  		GenUtil.em[GenUtil.c]+=" , "+e;
+  		// Printing Exception Message for Null Values
+  		System.out.println(e);
+  	}
+  	// Returns Standard Address Value
+  	return message;
+} // end of streetValid_fs(-,-)
+
+}// Class - END 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_YaZooKSJEeeOuuqYiCRRoA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_YaZooaSJEeeOuuqYiCRRoA" comment="" name="IRXSubscriber_SMTP_To" prompt="IRXSubscriber_SMTP_To?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YaZooqSJEeeOuuqYiCRRoA" comment="" name="IRXSubscriber_SMTP_From" prompt="IRXSubscriber_SMTP_From?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YaZoo6SJEeeOuuqYiCRRoA" comment="" name="IRXSubscriber_SMTP_Body" prompt="IRXSubscriber_SMTP_Body?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YaZopKSJEeeOuuqYiCRRoA" comment="" name="IRXSubscriber_SMTP_Subject" prompt="IRXSubscriber_SMTP_Subject?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YaZopaSJEeeOuuqYiCRRoA" comment="" name="IRXSubscriber_SMTP_Type" prompt="IRXSubscriber_SMTP_Type?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YaZopqSJEeeOuuqYiCRRoA" comment="" name="IRXSubscriber_SMTP_Header" prompt="IRXSubscriber_SMTP_Header?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YaZop6SJEeeOuuqYiCRRoA" comment="" name="IRXSubscriber_SMTP_Value" prompt="IRXSubscriber_SMTP_Value?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

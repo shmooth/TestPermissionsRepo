@@ -1,0 +1,87 @@
+package routines;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
+
+import org.apache.commons.net.PrintCommandListener;
+import org.apache.commons.net.ftp.FTP;
+import org.apache.commons.net.ftp.FTPFile;
+import org.apache.commons.net.ftp.FTPReply;
+import org.apache.commons.net.ftp.FTPSClient;
+
+
+
+public class  FTPCLIENT {
+
+	public static void FtpConnection(String server, String username, String password, String remoteFile, String localFile) {
+
+		System.setProperty("javax.net.debug", "ssl");
+		/*String server = server;
+		String username = "CCA";
+		String password = "D!$claimeR";
+		String remoteFileget = "/OUTBOX to CCA/Daily Reports/";
+		String localFile = "F:/FTPS/";*/
+		String protocol = "SSL"; 
+		int port = 990;
+		int timeoutInMillis = 10000;
+		boolean isImpicit = true;
+		try {
+			FTPSClient client = new FTPSClient(protocol, isImpicit);
+			client.setDataTimeout(timeoutInMillis);
+			client.addProtocolCommandListener(new PrintCommandListener(new PrintWriter(System.out)));
+			System.out.println("################ Connecting to Server ################################");
+			int reply;
+			System.out.println("################ Connect Call ################################");
+			client.connect(server, port);
+			client.login(username, password);
+			System.out.println("################ Login Success ################################");
+			client.setFileType(FTP.NON_PRINT_TEXT_FORMAT);
+			client.execPBSZ(0); 
+			client.execPROT("P"); 
+			client.enterLocalPassiveMode();
+			System.out.println("Connected to " + server + ".");
+			reply = client.getReplyCode();
+			if (!FTPReply.isPositiveCompletion(reply)) {
+				client.disconnect();
+				System.err.println("FTP server refused connection.");
+				System.exit(1);
+			}
+			client.changeWorkingDirectory(remoteFile);
+			FTPFile[] ftpFiles = client.listFiles();
+			for(int i = 0; i < ftpFiles.length; i++) {
+				System.out.println("Remote Files Names Are : " + ftpFiles[i].getName());
+				if(ftpFiles[i].isFile()) {
+					client.retrieveFile(ftpFiles[i].getName(), new FileOutputStream(new File(localFile + ftpFiles[i].getName())));
+				}
+			}
+			client.logout();
+		} catch (Exception e) {
+			System.err.println("Could not connect to server.");
+			e.printStackTrace();
+			return;
+		} finally {
+			System.out.println("# client disconnected");
+		}
+	}
+}
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+
