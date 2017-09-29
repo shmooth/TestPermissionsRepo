@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2017-09-28T17:03:27.534-0700">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2017-09-28T17:03:32.322-0700">
   <deletedItems id="_5fclcK4kEeCeZJx1OfXe6Q" path="Archive" type="PROCESS"/>
   <deletedItems id="_qNMmAKPzEee4t9Sq8BeBUQ" path="IRXEnrollment/IRXEnrollment" type="PROCESS"/>
   <deletedItems id="_sTjGQF-DEeSQedyNP_mxkQ" path="Transportation" type="PROCESS"/>
+  <deletedItems id="_gTPIYJzOEeeQqP6DkU5LPQ" path="" type="PROCESS"/>
 </recyclebin:RecycleBin>
