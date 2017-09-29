@@ -285,6 +285,7 @@
     <deletedFolders>process/Archive</deletedFolders>
     <deletedFolders>process/IRXEnrollment/IRXEnrollment</deletedFolders>
     <deletedFolders>process/IRXEnrollment</deletedFolders>
+    <deletedFolders>process/Transportation</deletedFolders>
     <migrationTask xmi:id="_pn0IkJzCEeeKy7rEyuj9Zg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pn0IkZzCEeeKy7rEyuj9Zg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pn0IkpzCEeeKy7rEyuj9Zg" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
