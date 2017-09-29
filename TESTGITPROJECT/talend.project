@@ -282,6 +282,7 @@
       <relatedItems xmi:id="_Y5QnlaSMEeeOuuqYiCRRoA" id="_ox38AF-TEeSQedyNP_mxkQ - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_IM21cKSpEee5e-8L0ThRZA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <deletedFolders>process/Archive</deletedFolders>
     <migrationTask xmi:id="_pn0IkJzCEeeKy7rEyuj9Zg" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pn0IkZzCEeeKy7rEyuj9Zg" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_pn0IkpzCEeeKy7rEyuj9Zg" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
