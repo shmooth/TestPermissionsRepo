@@ -282,6 +282,22 @@
       <relatedItems xmi:id="_1uHtKq1XEee159XoBkNjqQ" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_1uHtK61XEee159XoBkNjqQ" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_ZEtWIK-bEeeoh619OYxgOg">
+      <baseItem xmi:id="_ZEtWIa-bEeeoh619OYxgOg" id="_YV6zcIm9EeePqJkMZYJwew" version="0.1" type="job"/>
+      <relatedItems xmi:id="_ZEtWIq-bEeeoh619OYxgOg" id="_HSS-4INxEeewbLz1-nTQoA" version="Latest" type="property"/>
+      <relatedItems xmi:id="_ZEtWI6-bEeeoh619OYxgOg" id="_ZUkZQIFHEee1c-8V7sOBcQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_ZEtWJK-bEeeoh619OYxgOg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWJa-bEeeoh619OYxgOg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWJq-bEeeoh619OYxgOg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWJ6-bEeeoh619OYxgOg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWKK-bEeeoh619OYxgOg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWKa-bEeeoh619OYxgOg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWKq-bEeeoh619OYxgOg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWK6-bEeeoh619OYxgOg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWLK-bEeeoh619OYxgOg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWLa-bEeeoh619OYxgOg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_ZEtWLq-bEeeoh619OYxgOg" id="_HSS-4INxEeewbLz1-nTQoA - ops_ETLControl" version="Latest" type="schema"/>
+    </ItemsRelations>
     <deletedFolders>process/Archive</deletedFolders>
     <deletedFolders>process/IRXEnrollment/IRXEnrollment</deletedFolders>
     <deletedFolders>process/IRXEnrollment</deletedFolders>
