@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend/workspace/in.csv&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_xtT7wHfxEee8Q_2XIEcTOA" name="SQLike"/>
+    <routinesParameter id="_x8C7UHfxEee8Q_2XIEcTOA" name="DataOperation"/>
+    <routinesParameter id="_x8V2QHfxEee8Q_2XIEcTOA" name="Mathematical"/>
+    <routinesParameter id="_x8oxMHfxEee8Q_2XIEcTOA" name="Numeric"/>
+    <routinesParameter id="_x87sIHfxEee8Q_2XIEcTOA" name="Relational"/>
+    <routinesParameter id="_x9FdIHfxEee8Q_2XIEcTOA" name="StringHandling"/>
+    <routinesParameter id="_x9rTAHfxEee8Q_2XIEcTOA" name="TalendDataGenerator"/>
+    <routinesParameter id="_x9-N8HfxEee8Q_2XIEcTOA" name="TalendDate"/>
+    <routinesParameter id="_x-a54HfxEee8Q_2XIEcTOA" name="TalendString"/>
+    <routinesParameter id="_x-t00HfxEee8Q_2XIEcTOA" name="TalendStringUtil"/>
+    <routinesParameter id="_x_BW0HfxEee8Q_2XIEcTOA" name="DataMasking"/>
+    <routinesParameter id="_x_URwHfxEee8Q_2XIEcTOA" name="DataQuality"/>
+    <routinesParameter id="_x_dbsHfxEee8Q_2XIEcTOA" name="DataQualityDependencies"/>
+    <routinesParameter id="_x_w9sHfxEee8Q_2XIEcTOA" name="DqStringHandling"/>
+    <routinesParameter id="_x_6HoHfxEee8Q_2XIEcTOA" name="DQTechnical"/>
+    <routinesParameter id="_bToP8HupEeabO5SuZ90hSQ" name="test"/>
+  </parameters>
+  <node componentName="tSqoopImport" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSqoopImport_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_COMMANDINE" value="The available options are based on Sqoop 1.4.4. If you use&#xA;&#x9;&#x9;&#x9;&#x9;an earlier version, read the Sqoop documentation in order to find&#xA;&#x9;&#x9;&#x9;&#x9;those which are not available.&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="RADIO" name="USE_COMMANDLINE" value="false"/>
+    <elementParameter field="RADIO" name="USE_JAVAAPI" value="true"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_5_0"/>
+    <elementParameter field="HADOOP_DISTRIBUTION" name="SQOOP" value=""/>
+    <elementParameter field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://10.109.1.95:8020&quot;"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_TRACKER" value="&quot;localhost:8021&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;10.109.1.95:8032&quot;"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="true"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;10.109.1.95:8030&quot;"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="true"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;10.109.1.95:10020&quot;"/>
+    <elementParameter field="CHECK" name="SET_STAGING_DIRECTORY" value="true"/>
+    <elementParameter field="TEXT" name="STAGING_DIRECTORY" value="&quot;/tmp&quot;"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBTRACKER_PRINCIPAL" value="&quot;jt/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;"/>
+    <elementParameter field="TEXT" name="CONNECTION" value="&quot;jdbc:sqlserver://10.140.4.24:1433;DatabaseName=supmaster&quot;"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;tldRRamachandran&quot;"/>
+    <elementParameter field="CHECK" name="PASSWORD_STORED_IN_FILE" value="false"/>
+    <elementParameter field="TEXT" name="PASSWORD_FILE" value="&quot;file:///&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="/MPmBZIEt5eO9jXAQFfe4w=="/>
+    <elementParameter field="TABLE" name="DRIVER_JAR">
+      <elementValue elementRef="JAR_NAME" value="sqljdbc4.jar"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;com.microsoft.sqlserver.jdbc.SQLServerDriver&quot;"/>
+    <elementParameter field="TEXT" name="TABLE" value="&quot;application&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="FILE_FORMAT" value="textfile"/>
+    <elementParameter field="CHECK" name="DELETE_TARGET_DIR" value="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DEFINE_HADOOP_CODEC" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_CODEC" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIRECT" value="false"/>
+    <elementParameter field="CHECK" name="DEFINE_DIRECT_SPLIT_SIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DIRECT_SPLIT_SIZE" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_COLUMNS" value="false"/>
+    <elementParameter field="TABLE" name="COLUMNS" show="false"/>
+    <elementParameter field="CHECK" name="USE_WHERE" value="false"/>
+    <elementParameter field="TEXT" name="WHERE" value="&quot;id>0&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_QUERY" value="false"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, name from employee where $CONDITIONS&quot;" show="false"/>
+    <elementParameter field="LABEL" name="QUERY_LABEL" value="When importing a free-form query, you must specify a&#xA;&#x9;&#x9;&#x9;&#x9;destination directory. If you want to import the results of a query&#xA;&#x9;&#x9;&#x9;&#x9;in parallel, you must select a splitting column with --split-by&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter field="CHECK" name="USE_TARGET" value="true"/>
+    <elementParameter field="TEXT" name="TARGET" value="&quot;s3a://stericycle-dev-raw/sqoop/application10&quot;"/>
+    <elementParameter field="CHECK" name="USE_SPLIT" value="true"/>
+    <elementParameter field="TEXT" name="SPLIT" value="&quot;1&quot;"/>
+    <elementParameter field="CHECK" name="USE_MAPPERS" value="true"/>
+    <elementParameter field="TEXT" name="MAPPERS" value="&quot;1&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_LOG" value="false"/>
+    <elementParameter field="CHECK" name="VERBOSE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="MYSQL_DELIMITERS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_JAVA_MAPPING" value="false"/>
+    <elementParameter field="TABLE" name="JAVA_TYPE_MAPPING" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_HIVE_MAPPING" value="false"/>
+    <elementParameter field="TABLE" name="HIVE_TYPE_MAPPING" show="false"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="ADDITIONAL_COMMANDLINE_ARGUMENTS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="ADDITIONAL_JAVA">
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="&quot;null.string&quot;"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value="&quot;\\\\N&quot;"/>
+      <elementValue elementRef="ADDITIONAL_ARGUMENT" value="&quot;null.non-string&quot;"/>
+      <elementValue elementRef="ADDITIONAL_VALUE" value="&quot;\\\\N&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_SPEED_PARALLEL" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="This function only applies for HDP and Teradata" show="false"/>
+    <elementParameter field="TABLE" name="SPECIFIC_PARAMS" show="false"/>
+    <elementParameter field="CHECK" name="USE_ADDITION_PARAM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SPECIFIC_ADDITION_PARAM" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_MAP_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRED_JOB_REDUCE_MEMORY_MB" value="&quot;1000&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" value=""/>
+    <elementParameter field="TABLE" name="HOTLIBS"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_1" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.109.1.95&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;ec2-user&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PUBLICKEY"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="CHECK" name="PTY" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_CONSOLE"/>
+    <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_CONSOLE"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;C:/Users/Ranjith.Ramachandran/Downloads/test_ec2_keypair.pem&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TABLE" name="COMMANDS">
+      <elementValue elementRef="COMMAND" value="&quot;sqoop import --connect \&quot;jdbc:sqlserver://10.140.4.24:1433;DatabaseName=supmaster\&quot; --username tldRManyam --password Pwdtd1964 --driver   com.microsoft.sqlserver.jdbc.SQLServerDriver --table    \&quot;dbo.application\&quot; --target-dir  \&quot;s3a://stericycle-dev-raw/sqoop/applicationxx\&quot; -m 1&quot;"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_TIMEOUT" value="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSSH_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSqoopImport_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

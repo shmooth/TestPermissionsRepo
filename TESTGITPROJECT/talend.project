@@ -311,6 +311,25 @@
       <relatedItems xmi:id="_cX40KrAJEeeWP9oMQM4Orw" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_cX40K7AJEeeWP9oMQM4Orw" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_yh0toLAzEeetbd_SbJpfBg">
+      <baseItem xmi:id="_yh0tobAzEeetbd_SbJpfBg" id="_UXifIHfyEee8Q_2XIEcTOA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_yh0torAzEeetbd_SbJpfBg" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0to7AzEeetbd_SbJpfBg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tpLAzEeetbd_SbJpfBg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tpbAzEeetbd_SbJpfBg" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tprAzEeetbd_SbJpfBg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tp7AzEeetbd_SbJpfBg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tqLAzEeetbd_SbJpfBg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tqbAzEeetbd_SbJpfBg" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tqrAzEeetbd_SbJpfBg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tq7AzEeetbd_SbJpfBg" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0trLAzEeetbd_SbJpfBg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0trbAzEeetbd_SbJpfBg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0trrAzEeetbd_SbJpfBg" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tr7AzEeetbd_SbJpfBg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tsLAzEeetbd_SbJpfBg" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yh0tsbAzEeetbd_SbJpfBg" id="test" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/Archive</deletedFolders>
     <deletedFolders>process/IRXEnrollment/IRXEnrollment</deletedFolders>
     <deletedFolders>process/IRXEnrollment</deletedFolders>
