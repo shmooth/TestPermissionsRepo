@@ -111,10 +111,10 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSystem_1" show="false"/>
     <elementParameter field="CHECK" name="ROOTDIR" value="false"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:/Users/psmith/workspaces/commonwealth_errorjob&quot;" show="false"/>
-    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c echo HELLO&quot;" show="false"/>
-    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="true"/>
-    <elementParameter field="TABLE" name="ARRAY_COMMAND">
+    <elementParameter field="RADIO" name="USE_SINGLE_COMMAND" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c echo HELLO&quot;"/>
+    <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="false"/>
+    <elementParameter field="TABLE" name="ARRAY_COMMAND" show="false">
       <elementValue elementRef="VALUE" value="&quot;cmd&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;/c&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;echo shit&quot;"/>
