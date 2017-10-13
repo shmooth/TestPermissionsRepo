@@ -115,7 +115,7 @@
     <elementParameter field="MEMO_JAVA" name="COMMAND" value="&quot;cmd /c echo HELLO&quot;" show="false"/>
     <elementParameter field="RADIO" name="USE_ARRAY_COMMAND" value="true"/>
     <elementParameter field="TABLE" name="ARRAY_COMMAND">
-      <elementValue elementRef="VALUE" value="&quot;cmd /c curl -s -u psmith\@support.talend.com:Queeng12&quot;"/>
+      <elementValue elementRef="VALUE" value="&quot;cmd /c curl -s -u psmith@support.talend.com:Queeng12&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;-X GET --header \&quot;Accept: application/json\&quot;&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;https://ipaas.integrationcloud.talend.com/api/v1/executables&quot;"/>
     </elementParameter>
