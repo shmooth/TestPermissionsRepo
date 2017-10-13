@@ -182,7 +182,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="entry_date" expression="&quot;2016-10-09&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="entry_date" expression="2016-10-09 " type="id_String" nullable="true"/>
         <mapperTableEntries name="dynacolumn" expression="row1.dynacolumn " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
