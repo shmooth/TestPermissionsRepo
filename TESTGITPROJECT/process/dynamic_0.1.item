@@ -182,7 +182,7 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="entry_date" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;,row1.entry_date) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="entry_date" expression=" " type="id_String" nullable="true"/>
         <mapperTableEntries name="dynacolumn" expression="row1.dynacolumn " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
