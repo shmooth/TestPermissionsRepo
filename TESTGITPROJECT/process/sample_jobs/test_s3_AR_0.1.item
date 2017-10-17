@@ -116,7 +116,7 @@
   </parameters>
   <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="-7" offsetLabelY="-5" posX="288" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/psmith/Documents/cases/84362/data.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/psmith/Documents/cases/84362/data.txt.pipes.txt&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value=""/>
     <elementParameter field="TEXT" name="FOOTER" value=""/>
