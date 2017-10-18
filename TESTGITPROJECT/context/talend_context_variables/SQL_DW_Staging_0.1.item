@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_qCFkcLRVEeed6tQDXlQRBw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_qCFkcbRVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_AdditionalParams" prompt="SQL_Datawarehouse_Staging_AdditionalParams?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_qCFkcrRVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_Database" prompt="SQL_Datawarehouse_Staging_Database?" promptNeeded="false" type="id_String" value="ODS"/>
+  <contextParameter xmi:id="_qCFkc7RVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_Password" prompt="SQL_Datawarehouse_Staging_Password?" promptNeeded="false" type="id_String" value="ContactDWSB051!"/>
+  <contextParameter xmi:id="_qCFkdLRVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_Port" prompt="SQL_Datawarehouse_Staging_Port?" promptNeeded="false" type="id_String" value="1433"/>
+  <contextParameter xmi:id="_qCFkdbRVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_Schema" prompt="SQL_Datawarehouse_Staging_Schema?" promptNeeded="false" type="id_String" value="staging"/>
+  <contextParameter xmi:id="_qCFkdrRVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_Server" prompt="SQL_Datawarehouse_Staging_Server?" promptNeeded="false" type="id_String" value="ue1b-imssdw-datawarehouse-ap-dev-01.database.windows.net"/>
+  <contextParameter xmi:id="_qCFkd7RVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_Username" prompt="SQL_Datawarehouse_Staging_Username?" promptNeeded="false" type="id_String" value="imssadmin"/>
+  <contextParameter xmi:id="_qCFkeLRVEeed6tQDXlQRBw" comment="" name="SQL_Datawarehouse_Staging_String_of_connection" prompt="SQL_Datawarehouse_Staging_String_of_connection?" promptNeeded="false" type="id_String" value="jdbc:sqlserver://ue1b-imssdw-datawarehouse-ap-dev-01.database.windows.net:1433;DatabaseName=ODS;"/>
+</talendfile:ContextType>
