@@ -396,6 +396,19 @@
       <relatedItems xmi:id="_z-xZSrNTEeefeJjo05fS0g" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_z-xZS7NTEeefeJjo05fS0g" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_Jia4ULROEeed6tQDXlQRBw">
+      <baseItem xmi:id="_Jia4UbROEeed6tQDXlQRBw" id="_l3bYULRJEeed6tQDXlQRBw" version="0.1" type="job"/>
+      <relatedItems xmi:id="_Jia4UrROEeed6tQDXlQRBw" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4U7ROEeed6tQDXlQRBw" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4VLROEeed6tQDXlQRBw" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4VbROEeed6tQDXlQRBw" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4VrROEeed6tQDXlQRBw" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4V7ROEeed6tQDXlQRBw" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4WLROEeed6tQDXlQRBw" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4WbROEeed6tQDXlQRBw" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4WrROEeed6tQDXlQRBw" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Jia4W7ROEeed6tQDXlQRBw" id="Mathematical" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/Archive</deletedFolders>
     <deletedFolders>process/IRXEnrollment/IRXEnrollment</deletedFolders>
     <deletedFolders>process/IRXEnrollment</deletedFolders>
