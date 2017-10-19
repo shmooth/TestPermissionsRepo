@@ -21,7 +21,7 @@
   <parameters xmi:id="_JIqDzLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="localhost:8032"/>
   <parameters xmi:id="_JIqDzbRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="0.0.0.0:10020"/>
   <parameters xmi:id="_JIqDzrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_VERSION" value="Cloudera_CDH5_10"/>
-  <parameters xmi:id="_JIqDz7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="false"/>
+  <parameters xmi:id="_JIqDz7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
   <parameters xmi:id="_JIqD0LRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_SERVER" value="localhost"/>
   <parameters xmi:id="_JIqD0bRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
   <parameters xmi:id="_JIqD0rRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
