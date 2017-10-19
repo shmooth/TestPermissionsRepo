@@ -168,13 +168,13 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="NEO4J_2_3_X"/>
-    <elementParameter field="CHECK" name="REMOTE_SERVER" value="false"/>
-    <elementParameter field="DIRECTORY" name="DATABASE_PATH" value="&quot;http://asdf&quot;"/>
-    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;http://localhost:7474/db/data&quot;" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_SERVER" value="true"/>
+    <elementParameter field="DIRECTORY" name="DATABASE_PATH" value="&quot;http://asdf&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SERVER_URL" value="&quot;http://localhost:7474/db/data&quot;"/>
     <elementParameter field="CHECK" name="SHUTDOWN_DB" value="false" show="false"/>
     <elementParameter field="CHECK" name="SET_USERNAME" value="false" show="false"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;asdf&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="cGJ0nSogpYw="/>
     <elementParameter field="MEMO" name="QUERY" value="&quot;match (n:PUblication) Return 'n'&quot;&#x9;"/>
     <elementParameter field="TABLE" name="MAPPING"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
