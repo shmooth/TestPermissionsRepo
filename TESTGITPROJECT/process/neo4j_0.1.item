@@ -175,7 +175,7 @@
     <elementParameter field="CHECK" name="SET_USERNAME" value="false" show="false"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="" show="false"/>
-    <elementParameter field="MEMO" name="QUERY" value="&quot;match (n:PUblication) Return n&quot;&#x9;"/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;match (n:PUblication) Return 'n'&quot;&#x9;"/>
     <elementParameter field="TABLE" name="MAPPING"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tNeo4jInput_1"/>
