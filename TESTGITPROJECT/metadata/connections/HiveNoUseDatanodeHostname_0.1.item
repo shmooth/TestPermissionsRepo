@@ -48,6 +48,6 @@
   <parameters xmi:id="_q5QwR7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB" value=""/>
   <parameters xmi:id="_q5QwSLRtEeed6tQDXlQRBw" key="HIVE_EXECUTION_ENGINE"/>
   <parameters xmi:id="_q5QwSbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
-  <parameters xmi:id="_q5QwSrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
-  <parameters xmi:id="_q5QwS7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+  <parameters xmi:id="_ZbzlULRuEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+  <parameters xmi:id="_ZbzlUbRuEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
 </TalendMetadata:DatabaseConnection>
