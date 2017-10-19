@@ -112,7 +112,7 @@
   </parameters>
   <node componentName="tRowGenerator" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRowGenerator_1" show="false"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="3" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="6" show="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="col1"/>
       <elementValue elementRef="ARRAY" value="TalendString.getAsciiRandomString(6 )"/>
@@ -202,7 +202,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;&#xA;&#xA;String outputPath = &quot;c:/temp/myoutfile.txt&quot;;&#xA;&#xA;java.io.File outputFile = new java.io.File(outputPath);&#xA;&#xA;java.io.FileOutputStream fos = new java.io.FileOutputStream(outputFile, true);&#xA;&#xA;java.io.PrintStream ps = new java.io.PrintStream(fos, true);&#xA;&#xA;System.setOut(ps);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String outputPath = &quot;c:/temp/myoutfile.txt&quot;;&#xA;&#xA;java.io.File outputFile = new java.io.File(outputPath);&#xA;&#xA;java.io.FileOutputStream fos = new java.io.FileOutputStream(outputFile, true);&#xA;&#xA;java.io.PrintStream ps = new java.io.PrintStream(fos, true);&#xA;&#xA;System.setOut(ps);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
