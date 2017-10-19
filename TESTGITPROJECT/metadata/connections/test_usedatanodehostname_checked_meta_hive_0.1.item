@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_JIqDwLRqEeed6tQDXlQRBw" name="test_usedatanodehostname_checked_meta_hive" id="_Db0cwLRqEeed6tQDXlQRBw" label="test_usedatanodehostname_checked_meta_hive" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://localhost:10000/default;principal=hive/_HOST@EXAMPLE.COM;asdf" dbVersionString="STANDALONE" Port="10000" Username="asdf" Password="UfKSwImQPsg=" ServerName="localhost" SID="default" SqlSynthax="SQL Syntax" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true">
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_JIqDwLRqEeed6tQDXlQRBw" name="test_usedatanodehostname_checked_meta_hive" id="_Db0cwLRqEeed6tQDXlQRBw" label="test_usedatanodehostname_checked_meta_hive" ContextMode="true" ContextId="_tlD58LRrEeed6tQDXlQRBw" contextName="Default" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://localhost:10000/default;principal=hive/_HOST@EXAMPLE.COM;context.test_usedatanodehostname_checked_meta_hive_hiveAdditionalJDBCParameters" dbVersionString="STANDALONE" Port="context.test_usedatanodehostname_checked_meta_hive_Port" Username="context.test_usedatanodehostname_checked_meta_hive_Login" Password="context.test_usedatanodehostname_checked_meta_hive_Password" ServerName="context.test_usedatanodehostname_checked_meta_hive_Server" SID="context.test_usedatanodehostname_checked_meta_hive_Database" SqlSynthax="SQL Syntax" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true">
   <taggedValue xmi:id="_JIqDwbRqEeed6tQDXlQRBw" tag="Is Conn Need Reload" value="false"/>
   <taggedValue xmi:id="_JItHELRqEeed6tQDXlQRBw" tag="package filter" value=""/>
   <taggedValue xmi:id="_JI1C4LRqEeed6tQDXlQRBw" tag="Status" value=""/>
@@ -14,7 +14,7 @@
   <parameters xmi:id="_JIqDxbRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USEKEYTAB" value="true"/>
   <parameters xmi:id="_JIqDxrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="false"/>
   <parameters xmi:id="_JIqDx7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://localhost:8020"/>
-  <parameters xmi:id="_JIqDyLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USERNAME" value=""/>
+  <parameters xmi:id="_JIqDyLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USERNAME" value="context.test_usedatanodehostname_checked_meta_hive_Login"/>
   <parameters xmi:id="_JIqDybRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_xxhRUK-fEeeoh619OYxgOg"/>
   <parameters xmi:id="_JIqDyrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
   <parameters xmi:id="_JIqDy7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_10"/>
@@ -40,14 +40,15 @@
   <parameters xmi:id="_JIqD37RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   <parameters xmi:id="_JIqD4LRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_MODE" value="STANDALONE"/>
   <parameters xmi:id="_JIqD4bRqEeed6tQDXlQRBw" key="HIVE_SERVER_VERSION" value="HIVE2"/>
-  <parameters xmi:id="_JIqD4rRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_HIVEPRINCIPLA" value="hive/_HOST@EXAMPLE.COM"/>
+  <parameters xmi:id="_JIqD4rRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_HIVEPRINCIPLA" value="context.test_usedatanodehostname_checked_meta_hive_HivePrincipal"/>
   <parameters xmi:id="_JIqD47RqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_METASTOREURL" value=""/>
   <parameters xmi:id="_JIqD5LRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_DRIVERCLASS" value=""/>
   <parameters xmi:id="_JIqD5bRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_USERNAME" value=""/>
   <parameters xmi:id="_JIqD5rRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_PASSWORD" value=""/>
-  <parameters xmi:id="_JIqD57RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value="principalPete"/>
-  <parameters xmi:id="_JIqD6LRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB" value="c:/temp/ktab.tab"/>
+  <parameters xmi:id="_JIqD57RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value="context.test_usedatanodehostname_checked_meta_hive_HiveKeyTabPrincipal"/>
+  <parameters xmi:id="_JIqD6LRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB" value="context.test_usedatanodehostname_checked_meta_hive_HiveKeyTab"/>
   <parameters xmi:id="_JIqD6bRqEeed6tQDXlQRBw" key="HIVE_EXECUTION_ENGINE"/>
   <parameters xmi:id="_JIqD6rRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
-  <parameters xmi:id="_emUfMLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_ADDITIONAL_JDBC_SETTINGS" value="asdf"/>
+  <parameters xmi:id="_emUfMLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_ADDITIONAL_JDBC_SETTINGS" value="context.test_usedatanodehostname_checked_meta_hive_hiveAdditionalJDBCParameters"/>
+  <parameters xmi:id="_tltaMLRrEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_PROPERTIES" value=""/>
 </TalendMetadata:DatabaseConnection>

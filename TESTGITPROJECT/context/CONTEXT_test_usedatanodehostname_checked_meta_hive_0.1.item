@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_tlND4LRrEeed6tQDXlQRBw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_tlND4bRrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_Login" prompt="test_usedatanodehostname_checked_meta_hive_Login?" promptNeeded="false" type="id_String" value="asdf"/>
+  <contextParameter xmi:id="_tlND4rRrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_Port" prompt="test_usedatanodehostname_checked_meta_hive_Port?" promptNeeded="false" type="id_String" value="10000"/>
+  <contextParameter xmi:id="_tlND47RrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_Database" prompt="test_usedatanodehostname_checked_meta_hive_Database?" promptNeeded="false" type="id_String" value="default"/>
+  <contextParameter xmi:id="_tlND5LRrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_HiveKeyTabPrincipal" prompt="test_usedatanodehostname_checked_meta_hive_HiveKeyTabPrincipal?" promptNeeded="false" type="id_String" value="principalPete"/>
+  <contextParameter xmi:id="_tlND5bRrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_Password" prompt="test_usedatanodehostname_checked_meta_hive_Password?" promptNeeded="false" type="id_Password" value="UfKSwImQPsg="/>
+  <contextParameter xmi:id="_tlND5rRrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_HivePrincipal" prompt="test_usedatanodehostname_checked_meta_hive_HivePrincipal?" promptNeeded="false" type="id_String" value="hive/_HOST@EXAMPLE.COM"/>
+  <contextParameter xmi:id="_tlND57RrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_HiveKeyTab" prompt="test_usedatanodehostname_checked_meta_hive_HiveKeyTab?" promptNeeded="false" type="id_String" value="c:/temp/ktab.tab"/>
+  <contextParameter xmi:id="_tlND6LRrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_Server" prompt="test_usedatanodehostname_checked_meta_hive_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_tlND6bRrEeed6tQDXlQRBw" comment="" name="test_usedatanodehostname_checked_meta_hive_hiveAdditionalJDBCParameters" prompt="test_usedatanodehostname_checked_meta_hive_hiveAdditionalJDBCParameters?" promptNeeded="false" type="id_String" value="asdf"/>
+</talendfile:ContextType>
