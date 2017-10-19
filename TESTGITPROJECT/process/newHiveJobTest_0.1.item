@@ -130,16 +130,16 @@
     <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
     <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE"/>
     <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE2"/>
-    <elementParameter field="TEXT" name="HOST" value="context.test_usedatanodehostname_checked_meta_hive_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="TYPE" value="HIVE" show="false"/>
-    <elementParameter field="TEXT" name="PORT" value="context.test_usedatanodehostname_checked_meta_hive_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.test_usedatanodehostname_checked_meta_hive_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.test_usedatanodehostname_checked_meta_hive_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufHXs6lOm68Vvpy7+IJeRryr2uMflXxkUxTeUjiZ+1V23qAn5MixEYNuMxw8mlCTB/LwEy4Khakeg=="/>
-    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="context.test_usedatanodehostname_checked_meta_hive_hiveAdditionalJDBCParameters"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;10000&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;default&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;asdf&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="cGJ0nSogpYw="/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="&quot;asdf&quot;"/>
     <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
     <elementParameter field="CHECK" name="USE_KRB" value="true"/>
-    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="context.test_usedatanodehostname_checked_meta_hive_HivePrincipal"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;"/>
     <elementParameter field="TEXT" name="HIVESERVER2_LOCAL_PRINCIPAL" value="&quot;/tmp/hiveServer2User.keytab&quot;" show="false"/>
     <elementParameter field="FILE" name="HIVESERVER2_LOCAL_KEYTAB" value="&quot;/tmp/hiveServer2.keytab&quot;" show="false"/>
     <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@EXAMPLE.COM&quot;"/>
@@ -149,9 +149,9 @@
     <elementParameter field="TEXT" name="METASTORE_CLASSNAME" value="&quot;com.mysql.jdbc.Driver&quot;" show="false"/>
     <elementParameter field="TEXT" name="METASTORE_USERNAME" value="&quot;hive&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="METASTORE_PASSWORD" value="SsYyuEyMCHg=" show="false"/>
-    <elementParameter field="CHECK" name="USE_KEYTAB" value="true"/>
-    <elementParameter field="TEXT" name="PRINCIPAL" value="context.test_usedatanodehostname_checked_meta_hive_HiveKeyTabPrincipal"/>
-    <elementParameter field="FILE" name="KEYTAB_PATH" value="context.test_usedatanodehostname_checked_meta_hive_HiveKeyTab"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;principalPete&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;c:/temp/ktab.tab&quot;" show="false"/>
     <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
     <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
     <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
@@ -172,7 +172,7 @@
     <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
     <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false"/>
     <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
-    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="false"/>
     <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;443&quot;" show="false"/>
     <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
