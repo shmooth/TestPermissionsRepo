@@ -51,4 +51,6 @@
   <parameters xmi:id="_JIqD6rRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
   <parameters xmi:id="_emUfMLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_ADDITIONAL_JDBC_SETTINGS" value="context.test_usedatanodehostname_checked_meta_hive_hiveAdditionalJDBCParameters"/>
   <parameters xmi:id="_tltaMLRrEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_PROPERTIES" value=""/>
+  <parameters xmi:id="_HTDiILRsEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+  <parameters xmi:id="_HTDiIbRsEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
 </TalendMetadata:DatabaseConnection>
