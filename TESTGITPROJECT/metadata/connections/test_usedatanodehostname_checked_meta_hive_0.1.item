@@ -11,17 +11,17 @@
   <parameters xmi:id="_JIqDwrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_PORT"/>
   <parameters xmi:id="_JIqDw7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_YARN" value="true"/>
   <parameters xmi:id="_JIqDxLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="localhost:8030"/>
-  <parameters xmi:id="_JIqDxbRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USEKEYTAB" value="true"/>
+  <parameters xmi:id="_JIqDxbRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USEKEYTAB" value="false"/>
   <parameters xmi:id="_JIqDxrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="false"/>
   <parameters xmi:id="_JIqDx7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://localhost:8020"/>
-  <parameters xmi:id="_JIqDyLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USERNAME" value="asdf"/>
+  <parameters xmi:id="_JIqDyLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USERNAME" value=""/>
   <parameters xmi:id="_JIqDybRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_xxhRUK-fEeeoh619OYxgOg"/>
   <parameters xmi:id="_JIqDyrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
   <parameters xmi:id="_JIqDy7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_10"/>
   <parameters xmi:id="_JIqDzLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="localhost:8032"/>
   <parameters xmi:id="_JIqDzbRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="0.0.0.0:10020"/>
   <parameters xmi:id="_JIqDzrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_VERSION" value="Cloudera_CDH5_10"/>
-  <parameters xmi:id="_JIqDz7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="true"/>
+  <parameters xmi:id="_JIqDz7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="false"/>
   <parameters xmi:id="_JIqD0LRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_SERVER" value="localhost"/>
   <parameters xmi:id="_JIqD0bRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
   <parameters xmi:id="_JIqD0rRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
