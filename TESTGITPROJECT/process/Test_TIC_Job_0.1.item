@@ -202,7 +202,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String outputPath = &quot;c:/temp/myoutfile.txt&quot;;&#xA;boolean append = false; // here, 'append==false' is same as saying 'overwrite==true'&#xA;&#xA;java.io.File outputFile = new java.io.File(outputPath);&#xA;&#xA;java.io.FileOutputStream fos = new java.io.FileOutputStream(outputFile, append);&#xA;&#xA;java.io.PrintStream ps = new java.io.PrintStream(fos, true);&#xA;&#xA;System.setOut(ps);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String outputPath = &quot;c:/temp/myoutfile.txt&quot;;&#xA;boolean append = true; // here, 'append==false' is same as saying 'overwrite==true'&#xA;&#xA;java.io.File outputFile = new java.io.File(outputPath);&#xA;&#xA;java.io.FileOutputStream fos = new java.io.FileOutputStream(outputFile, append);&#xA;&#xA;java.io.PrintStream ps = new java.io.PrintStream(fos, true);&#xA;&#xA;System.setOut(ps);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
