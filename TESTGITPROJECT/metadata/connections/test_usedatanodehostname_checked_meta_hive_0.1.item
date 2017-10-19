@@ -11,7 +11,7 @@
   <parameters xmi:id="_JIqDwrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_PORT"/>
   <parameters xmi:id="_JIqDw7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_YARN" value="true"/>
   <parameters xmi:id="_JIqDxLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="localhost:8030"/>
-  <parameters xmi:id="_JIqDxbRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USEKEYTAB" value="false"/>
+  <parameters xmi:id="_JIqDxbRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USEKEYTAB" value="true"/>
   <parameters xmi:id="_JIqDxrRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="false"/>
   <parameters xmi:id="_JIqDx7RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://localhost:8020"/>
   <parameters xmi:id="_JIqDyLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USERNAME" value=""/>
@@ -45,8 +45,8 @@
   <parameters xmi:id="_JIqD5LRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_DRIVERCLASS" value=""/>
   <parameters xmi:id="_JIqD5bRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_USERNAME" value=""/>
   <parameters xmi:id="_JIqD5rRqEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_PASSWORD" value=""/>
-  <parameters xmi:id="_JIqD57RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value=""/>
-  <parameters xmi:id="_JIqD6LRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB" value=""/>
+  <parameters xmi:id="_JIqD57RqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value="principalPete"/>
+  <parameters xmi:id="_JIqD6LRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB" value="c:/temp/ktab.tab"/>
   <parameters xmi:id="_JIqD6bRqEeed6tQDXlQRBw" key="HIVE_EXECUTION_ENGINE"/>
   <parameters xmi:id="_JIqD6rRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
   <parameters xmi:id="_emUfMLRqEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_ADDITIONAL_JDBC_SETTINGS" value="asdf"/>
