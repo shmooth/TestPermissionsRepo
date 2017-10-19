@@ -444,6 +444,7 @@
       <relatedItems xmi:id="_uXTru7RqEeed6tQDXlQRBw" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_uXTrvLRqEeed6tQDXlQRBw" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_xdPscLRrEeed6tQDXlQRBw" id="_tlD58LRrEeed6tQDXlQRBw" version="Latest" type="context"/>
+      <relatedItems xmi:id="_mYLVILRuEeed6tQDXlQRBw" id="_h2c2YLRuEeed6tQDXlQRBw" version="Latest" type="property"/>
     </ItemsRelations>
     <deletedFolders>process/Archive</deletedFolders>
     <deletedFolders>process/IRXEnrollment/IRXEnrollment</deletedFolders>
