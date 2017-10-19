@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:DatabaseConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_q5QwILRtEeed6tQDXlQRBw" name="HiveNoUseDatanodeHostname" id="_kYGJMLRtEeed6tQDXlQRBw" label="HiveNoUseDatanodeHostname" DatabaseType="Hive" DriverClass="org.apache.hadoop.hive.jdbc.HiveDriver" URL="jdbc:hive2://localhost:10000/default" dbVersionString="STANDALONE" Port="10000" Username="myusername" Password="UfKSwImQPsg=" ServerName="localhost" SID="default" SqlSynthax="SQL Syntax" DbmsId="hive_id" ProductId="HIVE" StandardSQL="true">
+  <taggedValue xmi:id="_q5QwIbRtEeed6tQDXlQRBw" tag="Is Conn Need Reload" value="false"/>
+  <taggedValue xmi:id="_q5TMYLRtEeed6tQDXlQRBw" tag="package filter" value=""/>
+  <taggedValue xmi:id="_q5TzcLRtEeed6tQDXlQRBw" tag="Status" value=""/>
+  <taggedValue xmi:id="_q5TzcbRtEeed6tQDXlQRBw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_q5TzcrRtEeed6tQDXlQRBw" tag="Purpose" value=""/>
+  <taggedValue xmi:id="_q5Tzc7RtEeed6tQDXlQRBw" tag="Description" value=""/>
+  <taggedValue xmi:id="_q5TzdLRtEeed6tQDXlQRBw" tag="Author" value=""/>
+  <taggedValue xmi:id="_q5TzdbRtEeed6tQDXlQRBw" tag="otherParameter"/>
+  <parameters xmi:id="_q5QwIrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_PORT"/>
+  <parameters xmi:id="_q5QwI7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_YARN" value="true"/>
+  <parameters xmi:id="_q5QwJLRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_RESOURCEMANAGER_SCHEDULER_ADDRESS" value="localhost:8030"/>
+  <parameters xmi:id="_q5QwJbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_CUSTOM_CONFS" value="false"/>
+  <parameters xmi:id="_q5QwJrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_NAME_NODE_URL" value="hdfs://localhost:8020"/>
+  <parameters xmi:id="_q5QwJ7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_USERNAME" value="myusername"/>
+  <parameters xmi:id="_q5QwKLRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HADOOP_CLUSTER_ID" value="_DbAdELRtEeed6tQDXlQRBw"/>
+  <parameters xmi:id="_q5QwKbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOB_HISTORY_PRINCIPAL" value="mapred/_HOST@EXAMPLE.COM"/>
+  <parameters xmi:id="_q5QwKrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HBASE_VERSION" value="Cloudera_CDH5_10"/>
+  <parameters xmi:id="_q5QwK7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOB_TRACKER_URL" value="localhost:8032"/>
+  <parameters xmi:id="_q5QwLLRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOBHISTORY_ADDRESS" value="0.0.0.0:10020"/>
+  <parameters xmi:id="_q5QwLbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_VERSION" value="Cloudera_CDH5_10"/>
+  <parameters xmi:id="_q5QwLrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_DATANODE_HOSTNAME" value="false"/>
+  <parameters xmi:id="_q5QwL7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_SERVER" value="localhost"/>
+  <parameters xmi:id="_q5QwMLRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_TYPE" value="Hive"/>
+  <parameters xmi:id="_q5QwMbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_MAPRDB_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_q5QwMrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_JOB_TRACKER_PRINCIPAL" value="yarn/_HOST@EXAMPLE.COM"/>
+  <parameters xmi:id="_q5QwM7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_DISTRIBUTION" value="CLOUDERA"/>
+  <parameters xmi:id="_q5QwNLRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_MAPRDB_VERSION" value="Cloudera_CDH5_10"/>
+  <parameters xmi:id="_q5QwNbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_MAPRDB_DISTRIBUTION" value="CLOUDERA"/>
+  <parameters xmi:id="_q5QwNrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_KRB" value="false"/>
+  <parameters xmi:id="_q5QwN7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HBASE_DISTRIBUTION" value="CLOUDERA"/>
+  <parameters xmi:id="_q5QwOLRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_STAGING_DIRECTORY" value="/user"/>
+  <parameters xmi:id="_q5QwObRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HADOOP_CUSTOM_JARS"/>
+  <parameters xmi:id="_q5QwOrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_NAME_NODE_PRINCIPAL" value="hdfs/_HOST@EXAMPLE.COM"/>
+  <parameters xmi:id="_q5QwO7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_DB_PRODUCT" value="HIVE"/>
+  <parameters xmi:id="_q5QwPLRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_q5QwPbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HBASE_AUTHENTICATION_USE_MAPRTICKET" value="false"/>
+  <parameters xmi:id="_q5QwPrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  <parameters xmi:id="_q5QwP7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_HIVE_MODE" value="STANDALONE"/>
+  <parameters xmi:id="_q5QwQLRtEeed6tQDXlQRBw" key="HIVE_SERVER_VERSION" value="HIVE2"/>
+  <parameters xmi:id="_q5QwQbRtEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_HIVEPRINCIPLA" value="hive/_HOST@EXAMPLE.COM"/>
+  <parameters xmi:id="_q5QwQrRtEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_METASTOREURL" value=""/>
+  <parameters xmi:id="_q5QwQ7RtEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_DRIVERCLASS" value=""/>
+  <parameters xmi:id="_q5QwRLRtEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_USERNAME" value=""/>
+  <parameters xmi:id="_q5QwRbRtEeed6tQDXlQRBw" key="HIVE_AUTHENTICATION_PASSWORD" value=""/>
+  <parameters xmi:id="_q5QwRrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB_PRINCIPLA" value=""/>
+  <parameters xmi:id="_q5QwR7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_KEYTAB" value=""/>
+  <parameters xmi:id="_q5QwSLRtEeed6tQDXlQRBw" key="HIVE_EXECUTION_ENGINE"/>
+  <parameters xmi:id="_q5QwSbRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_USE_SSL" value="false"/>
+  <parameters xmi:id="_q5QwSrRtEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PATH" value=""/>
+  <parameters xmi:id="_q5QwS7RtEeed6tQDXlQRBw" key="CONN_PARA_KEY_SSL_TRUST_STORE_PASSWORD" value=""/>
+</TalendMetadata:DatabaseConnection>
